@@ -1,0 +1,6 @@
+[submodule "sym/random-keyboard-parts.pretty"]
+	path = sym/random-keyboard-parts.pretty
+	url = git@github.com:ai03-2725/random-keyboard-parts.pretty.git
+[submodule "sym/MX_Alps_Hybrid"]
+	path = sym/MX_Alps_Hybrid
+	url = git@github.com:ai03-2725/MX_Alps_Hybrid.git
