@@ -1115,7 +1115,7 @@ Row2-L
 Text GLabel 7400 4300 0    50   Input ~ 0
 Row3-L
 Text GLabel 8600 5100 0    50   Input ~ 0
-Row4L
+Row4-L
 Text GLabel 7850 1150 1    50   Input ~ 0
 Col0
 Wire Wire Line
@@ -2094,25 +2094,25 @@ Text GLabel 5700 6900 2    50   Input ~ 0
 SCL-R
 Text Notes 4350 6300 0    50   ~ 0
 Interconnect port Right
-Text GLabel 5750 3700 2    50   Input ~ 0
+Text GLabel 5350 4550 2    50   Input ~ 0
 SCL-L
-Text GLabel 5750 3800 2    50   Input ~ 0
+Text GLabel 5350 4650 2    50   Input ~ 0
 SDA-L
-Text Notes 5300 3250 0    50   ~ 0
+Text Notes 4900 4100 0    50   ~ 0
 Interconnect Port Left
 $Comp
 L power:GND #PWR0117
 U 1 1 6172F5A1
-P 6150 3900
-F 0 "#PWR0117" H 6150 3650 50  0001 C CNN
-F 1 "GND" H 6155 3727 50  0000 C CNN
-F 2 "" H 6150 3900 50  0001 C CNN
-F 3 "" H 6150 3900 50  0001 C CNN
-	1    6150 3900
+P 5750 4750
+F 0 "#PWR0117" H 5750 4500 50  0001 C CNN
+F 1 "GND" H 5755 4577 50  0000 C CNN
+F 2 "" H 5750 4750 50  0001 C CNN
+F 3 "" H 5750 4750 50  0001 C CNN
+	1    5750 4750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 3900 5750 3900
+	5750 4750 5350 4750
 $Comp
 L power:GND #PWR0118
 U 1 1 61752755
@@ -2233,16 +2233,16 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR0122
 U 1 1 618ACD08
-P 6150 3600
-F 0 "#PWR0122" H 6150 3450 50  0001 C CNN
-F 1 "+5V" H 6165 3773 50  0000 C CNN
-F 2 "" H 6150 3600 50  0001 C CNN
-F 3 "" H 6150 3600 50  0001 C CNN
-	1    6150 3600
+P 5750 4450
+F 0 "#PWR0122" H 5750 4300 50  0001 C CNN
+F 1 "+5V" H 5765 4623 50  0000 C CNN
+F 2 "" H 5750 4450 50  0001 C CNN
+F 3 "" H 5750 4450 50  0001 C CNN
+	1    5750 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 3600 5750 3600
+	5750 4450 5350 4450
 Wire Wire Line
 	5700 7100 5550 7100
 Wire Wire Line
@@ -2259,10 +2259,10 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5250 16
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Polyfuse_Small F2
+L Device:Polyfuse_Small F1
 U 1 1 61BE2113
 P 6250 1050
-F 0 "F2" V 6045 1050 50  0000 C CNN
+F 0 "F1" V 6045 1050 50  0000 C CNN
 F 1 "500mA" V 6136 1050 50  0000 C CNN
 F 2 "Fuse:Fuse_1206_3216Metric" H 6300 850 50  0001 L CNN
 F 3 "~" H 6250 1050 50  0001 C CNN
@@ -2411,12 +2411,12 @@ NoConn ~ 5700 2250
 $Comp
 L Connector:AudioJack4 J2
 U 1 1 62111EC5
-P 5550 3700
-F 0 "J2" H 5507 4025 50  0000 C CNN
-F 1 "I2C-L" H 5507 3934 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal" H 5550 3700 50  0001 C CNN
-F 3 "~" H 5550 3700 50  0001 C CNN
-	1    5550 3700
+P 5150 4550
+F 0 "J2" H 5107 4875 50  0000 C CNN
+F 1 "I2C-L" H 5107 4784 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal" H 5150 4550 50  0001 C CNN
+F 3 "~" H 5150 4550 50  0001 C CNN
+	1    5150 4550
 	1    0    0    -1  
 $EndComp
 $Comp
