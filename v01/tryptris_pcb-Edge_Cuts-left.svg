@@ -26,15 +26,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="cm"
      showgrid="false"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="992.68366"
-     inkscape:cy="856.40944"
-     inkscape:window-width="1818"
+     inkscape:zoom="2"
+     inkscape:cx="438.01007"
+     inkscape:cy="331.16828"
+     inkscape:window-width="2552"
      inkscape:window-height="1368"
-     inkscape:window-x="738"
+     inkscape:window-x="4"
      inkscape:window-y="31"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg2671" />
+     inkscape:current-layer="g2669" />
   <title
      id="title1359">SVG Picture created as tryptris_pcb-Edge_Cuts.svg date 2021/07/23 23:57:43 </title>
   <desc
@@ -263,40 +263,40 @@
     <path
        d="m 68650,52550 -4400,5950"
        id="path2193"
-       style="stroke:#000000;stroke-width:196.85;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="stroke:#000000;stroke-width:104.16666527;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        d="m 62850,58700 a 1000,1000 0 0 0 1400,-200"
        id="path2195"
-       style="stroke:#000000;stroke-width:196.85;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="stroke:#000000;stroke-width:104.16666527;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        d="m 68650,52550 a 1030.78,1030.78 0 0 0 -150,-1450"
        id="path2197"
-       style="stroke:#000000;stroke-width:196.85;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="stroke:#000000;stroke-width:104.16666527;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        d="M 55400,14900 V 32750"
        id="path2199"
-       style="stroke:#000000;stroke-width:196.85;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="stroke:#000000;stroke-width:104.16666527;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        d="m 55400,14900 c -0.01,-262.724 -91.703,-543.749 -314.3,-683.3 C 50522.624,11356.006 44368.007,9921.3901 34920.811,9864.6068 27477.932,9819.8706 24372.041,10443.871 19464.034,11784.267 15381.56,12899.207 11598.109,15142.192 11706,15036"
        id="path2201"
-       style="fill:#ce5c00;stroke:#000000;stroke-width:196.85;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ce5c00;stroke:#000000;stroke-width:104.16666527;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        sodipodi:nodetypes="csssc" />
     <path
        d="m 10500,44750 a 1150,1150 0 0 0 1150,1150"
        id="path2395"
-       style="stroke:#000000;stroke-width:196.85;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="stroke:#000000;stroke-width:104.16666527;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        d="m 10508.7,16400 a 1141.27,1141.27 0 0 1 591.3,-1000 l 606,-364"
        id="path2397"
-       style="stroke:#000000;stroke-width:196.85;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="stroke:#000000;stroke-width:104.16666527;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        d="m 11650,45900 h 5500"
        id="path2401"
-       style="stroke:#000000;stroke-width:196.85;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="stroke:#000000;stroke-width:104.16666527;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        d="m 10508,16400 -8,28350"
        id="path2403"
-       style="stroke:#000000;stroke-width:196.85;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="stroke:#000000;stroke-width:104.16666527;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <g
        id="g2405"
        style="stroke:#000000;stroke-width:196.85;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
@@ -694,12 +694,12 @@
        id="g2667"
        style="stroke:#000000;stroke-width:196.85;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:104.167px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:104.16666527;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
        d="m 68500,51100.003 c 0,0 -3248.997,-2331.659 -7275.652,-6331.058 -1926.066,-1913.029 -3546.842,-4191.317 -4501.729,-6934.225 -506.989,-1456.324 -1322.62,-5084.719 -1322.62,-5084.719"
        id="path16385"
        sodipodi:nodetypes="cssc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:104.167px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:104.16666527;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
        d="m 62849.999,58700.003 c 0,0 -4080.147,-3239.133 -14109.411,-6701.085 C 42456.114,49829.612 35887.983,48525.774 29343,47358 24710.662,46531.485 17149.997,45900.003 17149.997,45900.003"
        id="path18799"
        sodipodi:nodetypes="cssc" />
