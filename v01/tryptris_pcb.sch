@@ -1195,27 +1195,27 @@ Connection ~ 9450 3800
 Wire Wire Line
 	9050 3800 9050 4600
 Connection ~ 9050 3800
-Text GLabel 3700 3550 2    50   Input ~ 0
+Text GLabel 3700 2350 2    50   Input ~ 0
 Row0-L
-Text GLabel 3700 3650 2    50   Input ~ 0
+Text GLabel 3700 2250 2    50   Input ~ 0
 Row1-L
 Text GLabel 3700 2150 2    50   Input ~ 0
 Row2-L
-Text GLabel 3700 2250 2    50   Input ~ 0
+Text GLabel 3700 3650 2    50   Input ~ 0
 Row3-L
-Text GLabel 3700 2350 2    50   Input ~ 0
+Text GLabel 3700 3550 2    50   Input ~ 0
 Row4-L
-Text GLabel 3700 1850 2    50   Input ~ 0
+Text GLabel 3700 2050 2    50   Input ~ 0
 Col0
 Text GLabel 3700 1950 2    50   Input ~ 0
 Col1
-Text GLabel 3700 2050 2    50   Input ~ 0
+Text GLabel 3700 1850 2    50   Input ~ 0
 Col2
-Text GLabel 3700 3150 2    50   Input ~ 0
+Text GLabel 3700 4150 2    50   Input ~ 0
 Col3
-Text GLabel 3700 3250 2    50   Input ~ 0
+Text GLabel 3700 4250 2    50   Input ~ 0
 Col4
-Text GLabel 3700 3350 2    50   Input ~ 0
+Text GLabel 3700 4350 2    50   Input ~ 0
 Col5
 Text Notes 2800 6200 0    50   ~ 0
 IO Expander

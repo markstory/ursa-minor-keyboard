@@ -1115,7 +1115,7 @@ Row2-L
 Text GLabel 7400 4300 0    50   Input ~ 0
 Row3-L
 Text GLabel 8600 5100 0    50   Input ~ 0
-Row4L
+Row4-L
 Text GLabel 7850 1150 1    50   Input ~ 0
 Col0
 Wire Wire Line
@@ -1205,17 +1205,17 @@ Text GLabel 3700 2250 2    50   Input ~ 0
 Row3-L
 Text GLabel 3700 2350 2    50   Input ~ 0
 Row4-L
-Text GLabel 3700 1850 2    50   Input ~ 0
+Text GLabel 3700 2050 2    50   Input ~ 0
 Col0
 Text GLabel 3700 1950 2    50   Input ~ 0
 Col1
-Text GLabel 3700 2050 2    50   Input ~ 0
+Text GLabel 3700 1850 2    50   Input ~ 0
 Col2
-Text GLabel 3700 3150 2    50   Input ~ 0
+Text GLabel 3700 4150 2    50   Input ~ 0
 Col3
-Text GLabel 3700 3250 2    50   Input ~ 0
+Text GLabel 3700 4250 2    50   Input ~ 0
 Col4
-Text GLabel 3700 3350 2    50   Input ~ 0
+Text GLabel 3700 4350 2    50   Input ~ 0
 Col5
 Text Notes 2800 6200 0    50   ~ 0
 IO Expander
