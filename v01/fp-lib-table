@@ -2,4 +2,5 @@
   (lib (name random-keyboard-parts)(type KiCad)(uri /home/mark/code/tryptris/sym/random-keyboard-parts.pretty)(options "")(descr ""))
   (lib (name Type-C)(type KiCad)(uri /home/mark/code/tryptris/sym/Type-C.pretty)(options "")(descr ""))
   (lib (name MX_Only)(type KiCad)(uri /home/mark/code/tryptris/sym/MX_Alps_Hybrid/MX_Only.pretty)(options "")(descr ""))
+  (lib (name Panelization)(type KiCad)(uri /home/mark/code/tryptris/sym/Panelization.pretty)(options "")(descr ""))
 )
