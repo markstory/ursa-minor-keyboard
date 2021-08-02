@@ -2077,9 +2077,9 @@ Text GLabel 3700 3050 2    50   Input ~ 0
 SDA-L
 Text GLabel 3700 2950 2    50   Input ~ 0
 SCL-L
-Text GLabel 5700 7100 2    50   Input ~ 0
+Text GLabel 5700 7050 2    50   Input ~ 0
 SDA-R
-Text GLabel 5700 6900 2    50   Input ~ 0
+Text GLabel 5700 6800 2    50   Input ~ 0
 SCL-R
 Text Notes 4350 6300 0    50   ~ 0
 Interconnect port Right
@@ -2102,17 +2102,15 @@ F 3 "" H 5750 4750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5750 4750 5350 4750
-Wire Wire Line
-	5150 7100 4850 7100
 $Comp
 L power:VBUS #PWR0119
 U 1 1 61761FE9
-P 5000 6800
-F 0 "#PWR0119" H 5000 6650 50  0001 C CNN
-F 1 "VBUS" H 5015 6973 50  0000 C CNN
-F 2 "" H 5000 6800 50  0001 C CNN
-F 3 "" H 5000 6800 50  0001 C CNN
-	1    5000 6800
+P 5000 6650
+F 0 "#PWR0119" H 5000 6500 50  0001 C CNN
+F 1 "VBUS" H 5015 6823 50  0000 C CNN
+F 2 "" H 5000 6650 50  0001 C CNN
+F 3 "" H 5000 6650 50  0001 C CNN
+	1    5000 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2163,51 +2161,25 @@ Wire Wire Line
 $Comp
 L Device:R_Small R9
 U 1 1 6181A4E0
-P 5250 6900
-F 0 "R9" V 5054 6900 50  0000 C CNN
-F 1 "4.7k" V 5145 6900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5250 6900 50  0001 C CNN
-F 3 "~" H 5250 6900 50  0001 C CNN
-	1    5250 6900
+P 5250 6800
+F 0 "R9" V 5054 6800 50  0000 C CNN
+F 1 "4.7k" V 5145 6800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5250 6800 50  0001 C CNN
+F 3 "~" H 5250 6800 50  0001 C CNN
+	1    5250 6800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5000 6800 4950 6800
-Wire Wire Line
-	4850 6900 4950 6900
-Wire Wire Line
-	4950 6800 4950 6900
-Connection ~ 4950 6800
-Wire Wire Line
-	4950 6800 4900 6800
-Connection ~ 4950 6900
-Wire Wire Line
-	4950 6900 5150 6900
 $Comp
 L Device:R_Small R10
 U 1 1 618545B8
-P 5450 7100
-F 0 "R10" V 5254 7100 50  0000 C CNN
-F 1 "4.7k" V 5345 7100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5450 7100 50  0001 C CNN
-F 3 "~" H 5450 7100 50  0001 C CNN
-	1    5450 7100
+P 5450 7050
+F 0 "R10" V 5254 7050 50  0000 C CNN
+F 1 "4.7k" V 5345 7050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5450 7050 50  0001 C CNN
+F 3 "~" H 5450 7050 50  0001 C CNN
+	1    5450 7050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5350 7100 5250 7100
-Wire Wire Line
-	5250 7100 5250 7000
-Wire Wire Line
-	5250 7000 4900 7000
-Wire Wire Line
-	4900 6800 4900 7000
-Connection ~ 4900 6800
-Wire Wire Line
-	4900 6800 4850 6800
-Connection ~ 4900 7000
-Wire Wire Line
-	4900 7000 4850 7000
 $Comp
 L power:+5V #PWR0122
 U 1 1 618ACD08
@@ -2221,10 +2193,6 @@ F 3 "" H 5750 4450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5750 4450 5350 4450
-Wire Wire Line
-	5700 7100 5550 7100
-Wire Wire Line
-	5350 6900 5700 6900
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J1
 U 1 1 61B4D89A
@@ -2400,12 +2368,12 @@ $EndComp
 $Comp
 L Connector:AudioJack4 J3
 U 1 1 6217961C
-P 4650 6900
-F 0 "J3" H 4607 7225 50  0000 C CNN
-F 1 "I2C-R" H 4607 7134 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal" H 4650 6900 50  0001 C CNN
-F 3 "~" H 4650 6900 50  0001 C CNN
-	1    4650 6900
+P 4550 6900
+F 0 "J3" H 4507 7225 50  0000 C CNN
+F 1 "I2C-R" H 4507 7134 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_PJ320E_Horizontal" H 4550 6900 50  0001 C CNN
+F 3 "~" H 4550 6900 50  0001 C CNN
+	1    4550 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2520,12 +2488,12 @@ Wire Wire Line
 $Comp
 L power:VSS #PWR?
 U 1 1 61A602BB
-P 5150 7100
-F 0 "#PWR?" H 5150 6950 50  0001 C CNN
-F 1 "VSS" H 5165 7273 50  0000 C CNN
-F 2 "" H 5150 7100 50  0001 C CNN
-F 3 "" H 5150 7100 50  0001 C CNN
-	1    5150 7100
+P 4750 7200
+F 0 "#PWR?" H 4750 7050 50  0001 C CNN
+F 1 "VSS" H 4765 7373 50  0000 C CNN
+F 2 "" H 4750 7200 50  0001 C CNN
+F 3 "" H 4750 7200 50  0001 C CNN
+	1    4750 7200
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -2574,4 +2542,42 @@ F 3 "" H 2250 8850 50  0001 C CNN
 	1    2250 8850
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	4650 7100 4750 7100
+Wire Wire Line
+	5550 7050 5600 7050
+Wire Wire Line
+	5000 6800 5000 6650
+Wire Wire Line
+	4750 6800 5000 6800
+Connection ~ 5000 6800
+Wire Wire Line
+	5000 6800 5150 6800
+Wire Wire Line
+	5000 7050 5350 7050
+Wire Wire Line
+	5600 6900 5600 6800
+Wire Wire Line
+	5350 6800 5600 6800
+Connection ~ 5600 6800
+Wire Wire Line
+	5600 6800 5700 6800
+Wire Wire Line
+	5000 6800 5000 7050
+Wire Wire Line
+	4750 6900 5600 6900
+Wire Wire Line
+	4750 7100 4750 7200
+Connection ~ 4750 7100
+Wire Wire Line
+	4750 7000 4950 7000
+Wire Wire Line
+	4950 7000 4950 7150
+Wire Wire Line
+	4950 7150 5600 7150
+Wire Wire Line
+	5600 7150 5600 7050
+Connection ~ 5600 7050
+Wire Wire Line
+	5600 7050 5700 7050
 $EndSCHEMATC
