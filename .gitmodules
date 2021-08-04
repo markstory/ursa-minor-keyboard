@@ -10,3 +10,9 @@
 [submodule "sym/Panelization.pretty"]
 	path = sym/Panelization.pretty
 	url = git@github.com:madworm/Panelization.pretty.git
+[submodule "sym/Keebio-Parts.pretty"]
+	path = sym/Keebio-Parts.pretty
+	url = git@github.com:keebio/Keebio-Parts.pretty.git
+[submodule "sym/keebio-components"]
+	path = sym/keebio-components
+	url = git@github.com:keebio/keebio-components.git
