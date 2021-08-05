@@ -516,17 +516,6 @@ F 3 "" H 7475 1425 60  0001 C CNN
 	1    8100 1450
 	1    0    0    -1  
 $EndComp
-$Comp
-L MX_Alps_Hybrid:MX-NoLED MX1
-U 1 1 60F7F26B
-P 7700 1450
-F 0 "MX1" H 7733 1673 60  0000 C CNN
-F 1 "K0_0" H 7733 1599 20  0000 C CNN
-F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7075 1425 60  0001 C CNN
-F 3 "" H 7075 1425 60  0001 C CNN
-	1    7700 1450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9150 2700 8750 2700
 Connection ~ 9150 2700
@@ -2580,4 +2569,15 @@ Wire Wire Line
 Connection ~ 5600 7050
 Wire Wire Line
 	5600 7050 5700 7050
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX1
+U 1 1 60F7F26B
+P 7700 1450
+F 0 "MX1" H 7733 1673 60  0000 C CNN
+F 1 "K0_0" H 7733 1599 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7075 1425 60  0001 C CNN
+F 3 "" H 7075 1425 60  0001 C CNN
+	1    7700 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
