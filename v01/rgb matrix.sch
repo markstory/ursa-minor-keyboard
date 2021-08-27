@@ -1,0 +1,1195 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 1200 1050 0    50   Input ~ 0
+SDA-L
+Wire Wire Line
+	1200 1050 1350 1050
+Text GLabel 1200 1150 0    50   Input ~ 0
+SCL-L
+Wire Wire Line
+	1200 1150 1350 1150
+$Comp
+L power:GND #PWR?
+U 1 1 612E3AF8
+P 1200 1250
+F 0 "#PWR?" H 1200 1000 50  0001 C CNN
+F 1 "GND" H 1205 1077 50  0000 C CNN
+F 2 "" H 1200 1250 50  0001 C CNN
+F 3 "" H 1200 1250 50  0001 C CNN
+	1    1200 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1250 1200 1250
+Text Notes 2550 850  0    50   ~ 0
+Left side\naddress:\n11101 + AD + R/W\n1110100rw
+Text Notes 10800 1200 0    50   ~ 0
+Right side\naddress:\n11101 + AD +R/W\n1110101rw
+Text GLabel 9150 1100 0    50   Input ~ 0
+SDA-R
+Wire Wire Line
+	9150 1100 9450 1100
+Text GLabel 9150 1200 0    50   Input ~ 0
+SCL-R
+Wire Wire Line
+	9150 1200 9400 1200
+Wire Wire Line
+	9400 1200 9400 1300
+Wire Wire Line
+	9400 1300 9450 1300
+Connection ~ 9400 1200
+Wire Wire Line
+	9400 1200 9450 1200
+$Comp
+L power:+5V #PWR?
+U 1 1 612F5856
+P 800 1400
+F 0 "#PWR?" H 800 1250 50  0001 C CNN
+F 1 "+5V" H 815 1573 50  0000 C CNN
+F 2 "" H 800 1400 50  0001 C CNN
+F 3 "" H 800 1400 50  0001 C CNN
+	1    800  1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 612F67D0
+P 1000 1500
+F 0 "R?" V 804 1500 50  0000 C CNN
+F 1 "100K" V 895 1500 50  0000 C CNN
+F 2 "" H 1000 1500 50  0001 C CNN
+F 3 "~" H 1000 1500 50  0001 C CNN
+	1    1000 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 1500 1350 1500
+Wire Wire Line
+	1350 1500 1350 1450
+Wire Wire Line
+	900  1500 800  1500
+$Comp
+L Device:R_Small R?
+U 1 1 612F7594
+P 1000 1600
+F 0 "R?" V 1196 1600 50  0000 C CNN
+F 1 "4.7K" V 1105 1600 50  0000 C CNN
+F 2 "" H 1000 1600 50  0001 C CNN
+F 3 "~" H 1000 1600 50  0001 C CNN
+	1    1000 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 1550 1100 1550
+Wire Wire Line
+	1100 1550 1100 1600
+Wire Wire Line
+	900  1600 800  1600
+Wire Wire Line
+	800  1400 800  1500
+Connection ~ 800  1500
+Wire Wire Line
+	800  1500 800  1600
+NoConn ~ 1350 1750
+NoConn ~ 1350 1850
+$Comp
+L Device:R_Small R?
+U 1 1 612FC5F2
+P 1000 2050
+F 0 "R?" V 1196 2050 50  0000 C CNN
+F 1 "20K" V 1105 2050 50  0000 C CNN
+F 2 "" H 1000 2050 50  0001 C CNN
+F 3 "~" H 1000 2050 50  0001 C CNN
+	1    1000 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 612FEC57
+P 750 2050
+F 0 "#PWR?" H 750 1800 50  0001 C CNN
+F 1 "GND" H 755 1877 50  0000 C CNN
+F 2 "" H 750 2050 50  0001 C CNN
+F 3 "" H 750 2050 50  0001 C CNN
+	1    750  2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  2050 900  2050
+Wire Wire Line
+	1100 2050 1350 2050
+$Comp
+L power:GND #PWR?
+U 1 1 612FFAFE
+P 1850 3200
+F 0 "#PWR?" H 1850 2950 50  0001 C CNN
+F 1 "GND" H 1855 3027 50  0000 C CNN
+F 2 "" H 1850 3200 50  0001 C CNN
+F 3 "" H 1850 3200 50  0001 C CNN
+	1    1850 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3200 1850 3050
+Text GLabel 2350 2050 2    50   Input ~ 0
+Left-CB1
+$Comp
+L Driver_LED:IS31FL3731-SA U4
+U 1 1 612B7F50
+P 1850 1950
+F 0 "U4" H 1850 3231 50  0000 C CNN
+F 1 "IS31FL3731-SA" H 1850 3140 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 1850 1950 50  0001 C CNN
+F 3 "http://www.issi.com/WW/pdf/31FL3731.pdf" H 1850 1950 50  0001 C CNN
+	1    1850 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 2350 2150 2    50   Input ~ 0
+Left-CB2
+Text GLabel 2350 2250 2    50   Input ~ 0
+Left-CB3
+Text GLabel 2350 2350 2    50   Input ~ 0
+Left-CB4
+Text GLabel 2350 2450 2    50   Input ~ 0
+Left-CB5
+Text GLabel 2350 2550 2    50   Input ~ 0
+Left-CB6
+Text GLabel 2350 2650 2    50   Input ~ 0
+Left-CB7
+Text GLabel 2350 2750 2    50   Input ~ 0
+Left-CB8
+Text GLabel 2350 2850 2    50   Input ~ 0
+Left-CB9
+Text GLabel 2350 1350 2    50   Input ~ 0
+Left-CA4
+Text GLabel 2350 1250 2    50   Input ~ 0
+Left-CA3
+Text GLabel 2350 1150 2    50   Input ~ 0
+Left-CA2
+Text GLabel 2350 1050 2    50   Input ~ 0
+Left-CA1
+$Comp
+L Device:C_Small C?
+U 1 1 61305ABE
+P 1050 3100
+F 0 "C?" V 821 3100 50  0000 C CNN
+F 1 "1uF" V 912 3100 50  0000 C CNN
+F 2 "" H 1050 3100 50  0001 C CNN
+F 3 "~" H 1050 3100 50  0001 C CNN
+	1    1050 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 613064EA
+P 1050 3450
+F 0 "C?" V 821 3450 50  0000 C CNN
+F 1 "0.1uF" V 912 3450 50  0000 C CNN
+F 2 "" H 1050 3450 50  0001 C CNN
+F 3 "~" H 1050 3450 50  0001 C CNN
+	1    1050 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61306F9F
+P 850 2900
+F 0 "#PWR?" H 850 2750 50  0001 C CNN
+F 1 "+5V" H 865 3073 50  0000 C CNN
+F 2 "" H 850 2900 50  0001 C CNN
+F 3 "" H 850 2900 50  0001 C CNN
+	1    850  2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61307631
+P 1250 3600
+F 0 "#PWR?" H 1250 3350 50  0001 C CNN
+F 1 "GND" H 1255 3427 50  0000 C CNN
+F 2 "" H 1250 3600 50  0001 C CNN
+F 3 "" H 1250 3600 50  0001 C CNN
+	1    1250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 3450 1250 3450
+Wire Wire Line
+	1250 3450 1250 3600
+Wire Wire Line
+	1150 3100 1250 3100
+Wire Wire Line
+	1250 3100 1250 3450
+Connection ~ 1250 3450
+Wire Wire Line
+	950  3450 850  3450
+Wire Wire Line
+	850  2900 850  3100
+Wire Wire Line
+	950  3100 850  3100
+Connection ~ 850  3100
+Wire Wire Line
+	850  3100 850  3450
+$Comp
+L power:+5V #PWR?
+U 1 1 6130F144
+P 2250 850
+F 0 "#PWR?" H 2250 700 50  0001 C CNN
+F 1 "+5V" H 2265 1023 50  0000 C CNN
+F 2 "" H 2250 850 50  0001 C CNN
+F 3 "" H 2250 850 50  0001 C CNN
+	1    2250 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 850  1850 850 
+$Comp
+L Device:R_Small R?
+U 1 1 61318377
+P 9050 1500
+F 0 "R?" V 8854 1500 50  0000 C CNN
+F 1 "100K" V 8945 1500 50  0000 C CNN
+F 2 "" H 9050 1500 50  0001 C CNN
+F 3 "~" H 9050 1500 50  0001 C CNN
+	1    9050 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 6131863E
+P 9050 1600
+F 0 "R?" V 8854 1600 50  0000 C CNN
+F 1 "R_Small" V 8945 1600 50  0000 C CNN
+F 2 "" H 9050 1600 50  0001 C CNN
+F 3 "~" H 9050 1600 50  0001 C CNN
+	1    9050 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9150 1600 9450 1600
+Wire Wire Line
+	9150 1500 9450 1500
+$Comp
+L power:VBUS #PWR?
+U 1 1 6134DE7A
+P 8700 1500
+F 0 "#PWR?" H 8700 1350 50  0001 C CNN
+F 1 "VBUS" H 8715 1673 50  0000 C CNN
+F 2 "" H 8700 1500 50  0001 C CNN
+F 3 "" H 8700 1500 50  0001 C CNN
+	1    8700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1500 8950 1500
+Wire Wire Line
+	8950 1600 8700 1600
+Wire Wire Line
+	8700 1600 8700 1500
+Connection ~ 8700 1500
+$Comp
+L power:VBUS #PWR?
+U 1 1 6134F6BB
+P 10350 900
+F 0 "#PWR?" H 10350 750 50  0001 C CNN
+F 1 "VBUS" H 10365 1073 50  0000 C CNN
+F 2 "" H 10350 900 50  0001 C CNN
+F 3 "" H 10350 900 50  0001 C CNN
+	1    10350 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 900  9950 900 
+$Comp
+L Driver_LED:IS31FL3731-SA U?
+U 1 1 612B9E5D
+P 9950 2000
+F 0 "U?" H 9950 3281 50  0000 C CNN
+F 1 "IS31FL3731-SA" H 9950 3190 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 9950 2000 50  0001 C CNN
+F 3 "http://www.issi.com/WW/pdf/31FL3731.pdf" H 9950 2000 50  0001 C CNN
+	1    9950 2000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9450 1800
+NoConn ~ 9450 1900
+$Comp
+L Device:R_Small R?
+U 1 1 61351B54
+P 9100 2100
+F 0 "R?" V 8904 2100 50  0000 C CNN
+F 1 "20K" V 8995 2100 50  0000 C CNN
+F 2 "" H 9100 2100 50  0001 C CNN
+F 3 "~" H 9100 2100 50  0001 C CNN
+	1    9100 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9200 2100 9450 2100
+$Comp
+L power:VSS #PWR?
+U 1 1 61356905
+P 8750 2100
+F 0 "#PWR?" H 8750 1950 50  0001 C CNN
+F 1 "VSS" H 8765 2273 50  0000 C CNN
+F 2 "" H 8750 2100 50  0001 C CNN
+F 3 "" H 8750 2100 50  0001 C CNN
+	1    8750 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8750 2100 9000 2100
+$Comp
+L power:VSS #PWR?
+U 1 1 613573F1
+P 9950 3250
+F 0 "#PWR?" H 9950 3100 50  0001 C CNN
+F 1 "VSS" H 9965 3423 50  0000 C CNN
+F 2 "" H 9950 3250 50  0001 C CNN
+F 3 "" H 9950 3250 50  0001 C CNN
+	1    9950 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9950 3100 9950 3250
+$Comp
+L power:VBUS #PWR?
+U 1 1 61358071
+P 8850 2850
+F 0 "#PWR?" H 8850 2700 50  0001 C CNN
+F 1 "VBUS" H 8865 3023 50  0000 C CNN
+F 2 "" H 8850 2850 50  0001 C CNN
+F 3 "" H 8850 2850 50  0001 C CNN
+	1    8850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61358474
+P 9050 3000
+F 0 "C?" V 8821 3000 50  0000 C CNN
+F 1 "1uF" V 8912 3000 50  0000 C CNN
+F 2 "" H 9050 3000 50  0001 C CNN
+F 3 "~" H 9050 3000 50  0001 C CNN
+	1    9050 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61358FB9
+P 9050 3200
+F 0 "C?" V 8821 3200 50  0000 C CNN
+F 1 "C_Small" V 8912 3200 50  0000 C CNN
+F 2 "" H 9050 3200 50  0001 C CNN
+F 3 "~" H 9050 3200 50  0001 C CNN
+	1    9050 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VSS #PWR?
+U 1 1 6135C244
+P 9400 3250
+F 0 "#PWR?" H 9400 3100 50  0001 C CNN
+F 1 "VSS" H 9415 3423 50  0000 C CNN
+F 2 "" H 9400 3250 50  0001 C CNN
+F 3 "" H 9400 3250 50  0001 C CNN
+	1    9400 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9150 3200 9200 3200
+Wire Wire Line
+	9400 3200 9400 3250
+Wire Wire Line
+	9150 3000 9200 3000
+Wire Wire Line
+	9200 3000 9200 3200
+Connection ~ 9200 3200
+Wire Wire Line
+	9200 3200 9400 3200
+Wire Wire Line
+	8950 3200 8850 3200
+Wire Wire Line
+	8850 3200 8850 3000
+Wire Wire Line
+	8950 3000 8850 3000
+Connection ~ 8850 3000
+Wire Wire Line
+	8850 3000 8850 2850
+Text GLabel 10450 2900 2    50   Input ~ 0
+Right-CB9
+Text GLabel 10450 2800 2    50   Input ~ 0
+Right-CB8
+Text GLabel 10450 2700 2    50   Input ~ 0
+Right-CB7
+Text GLabel 10450 2600 2    50   Input ~ 0
+Right-CB6
+Text GLabel 10450 2500 2    50   Input ~ 0
+Right-CB5
+Text GLabel 10450 2400 2    50   Input ~ 0
+Right-CB4
+Text GLabel 10450 2300 2    50   Input ~ 0
+Right-CB3
+Text GLabel 10450 2200 2    50   Input ~ 0
+Right-CB2
+Text GLabel 10450 2100 2    50   Input ~ 0
+Right-CB1
+Text GLabel 10450 1900 2    50   Input ~ 0
+Right-CA9
+Text GLabel 10450 1800 2    50   Input ~ 0
+Right-CA8
+Text GLabel 10450 1700 2    50   Input ~ 0
+Right-CA7
+Text GLabel 10450 1600 2    50   Input ~ 0
+Right-CA6
+$Comp
+L Device:LED_BRAG D?
+U 1 1 61396D08
+P 1050 4700
+F 0 "D?" V 1004 5060 50  0000 L CNN
+F 1 "6028 LED" V 1095 5060 50  0000 L CNN
+F 2 "" H 1050 4650 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 1050 4650 50  0001 C CNN
+	1    1050 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 613A0BAF
+P 1050 5400
+F 0 "D?" V 1004 5760 50  0000 L CNN
+F 1 "6028 LED" V 1095 5760 50  0000 L CNN
+F 2 "" H 1050 5350 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 1050 5350 50  0001 C CNN
+	1    1050 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 613A3EC9
+P 1050 6100
+F 0 "D?" V 1004 6460 50  0000 L CNN
+F 1 "6028 LED" V 1095 6460 50  0000 L CNN
+F 2 "" H 1050 6050 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 1050 6050 50  0001 C CNN
+	1    1050 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 613A5471
+P 1050 6750
+F 0 "D?" V 1004 7110 50  0000 L CNN
+F 1 "6028 LED" V 1095 7110 50  0000 L CNN
+F 2 "" H 1050 6700 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 1050 6700 50  0001 C CNN
+	1    1050 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 613EFD04
+P 2300 4700
+F 0 "D?" V 2254 5060 50  0000 L CNN
+F 1 "6028 LED" V 2345 5060 50  0000 L CNN
+F 2 "" H 2300 4650 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 2300 4650 50  0001 C CNN
+	1    2300 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 613EFD0A
+P 2300 5400
+F 0 "D?" V 2254 5760 50  0000 L CNN
+F 1 "6028 LED" V 2345 5760 50  0000 L CNN
+F 2 "" H 2300 5350 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 2300 5350 50  0001 C CNN
+	1    2300 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 613EFD10
+P 2300 6100
+F 0 "D?" V 2254 6460 50  0000 L CNN
+F 1 "6028 LED" V 2345 6460 50  0000 L CNN
+F 2 "" H 2300 6050 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 2300 6050 50  0001 C CNN
+	1    2300 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 613EFD16
+P 2300 6750
+F 0 "D?" V 2254 7110 50  0000 L CNN
+F 1 "6028 LED" V 2345 7110 50  0000 L CNN
+F 2 "" H 2300 6700 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 2300 6700 50  0001 C CNN
+	1    2300 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 613F3381
+P 3500 4700
+F 0 "D?" V 3454 5060 50  0000 L CNN
+F 1 "6028 LED" V 3545 5060 50  0000 L CNN
+F 2 "" H 3500 4650 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 3500 4650 50  0001 C CNN
+	1    3500 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 613F3387
+P 3500 5400
+F 0 "D?" V 3454 5760 50  0000 L CNN
+F 1 "6028 LED" V 3545 5760 50  0000 L CNN
+F 2 "" H 3500 5350 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 3500 5350 50  0001 C CNN
+	1    3500 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 613F338D
+P 3500 6100
+F 0 "D?" V 3454 6460 50  0000 L CNN
+F 1 "6028 LED" V 3545 6460 50  0000 L CNN
+F 2 "" H 3500 6050 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 3500 6050 50  0001 C CNN
+	1    3500 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 613F3393
+P 3500 6750
+F 0 "D?" V 3454 7110 50  0000 L CNN
+F 1 "6028 LED" V 3545 7110 50  0000 L CNN
+F 2 "" H 3500 6700 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 3500 6700 50  0001 C CNN
+	1    3500 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 614159CB
+P 4700 4750
+F 0 "D?" V 4654 5110 50  0000 L CNN
+F 1 "6028 LED" V 4745 5110 50  0000 L CNN
+F 2 "" H 4700 4700 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 4700 4700 50  0001 C CNN
+	1    4700 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 614159D1
+P 4700 5450
+F 0 "D?" V 4654 5810 50  0000 L CNN
+F 1 "6028 LED" V 4745 5810 50  0000 L CNN
+F 2 "" H 4700 5400 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 4700 5400 50  0001 C CNN
+	1    4700 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 614159D7
+P 4700 6150
+F 0 "D?" V 4654 6510 50  0000 L CNN
+F 1 "6028 LED" V 4745 6510 50  0000 L CNN
+F 2 "" H 4700 6100 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 4700 6100 50  0001 C CNN
+	1    4700 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 614159DD
+P 4700 6800
+F 0 "D?" V 4654 7160 50  0000 L CNN
+F 1 "6028 LED" V 4745 7160 50  0000 L CNN
+F 2 "" H 4700 6750 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 4700 6750 50  0001 C CNN
+	1    4700 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 6141A674
+P 5900 4750
+F 0 "D?" V 5854 5110 50  0000 L CNN
+F 1 "6028 LED" V 5945 5110 50  0000 L CNN
+F 2 "" H 5900 4700 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 5900 4700 50  0001 C CNN
+	1    5900 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 6141A67A
+P 5900 5450
+F 0 "D?" V 5854 5810 50  0000 L CNN
+F 1 "6028 LED" V 5945 5810 50  0000 L CNN
+F 2 "" H 5900 5400 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 5900 5400 50  0001 C CNN
+	1    5900 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 6141A680
+P 5900 6150
+F 0 "D?" V 5854 6510 50  0000 L CNN
+F 1 "6028 LED" V 5945 6510 50  0000 L CNN
+F 2 "" H 5900 6100 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 5900 6100 50  0001 C CNN
+	1    5900 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 6141A686
+P 5900 6800
+F 0 "D?" V 5854 7160 50  0000 L CNN
+F 1 "6028 LED" V 5945 7160 50  0000 L CNN
+F 2 "" H 5900 6750 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 5900 6750 50  0001 C CNN
+	1    5900 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 614211C5
+P 7100 4750
+F 0 "D?" V 7054 5110 50  0000 L CNN
+F 1 "6028 LED" V 7145 5110 50  0000 L CNN
+F 2 "" H 7100 4700 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 7100 4700 50  0001 C CNN
+	1    7100 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 614211CB
+P 7100 5450
+F 0 "D?" V 7054 5810 50  0000 L CNN
+F 1 "6028 LED" V 7145 5810 50  0000 L CNN
+F 2 "" H 7100 5400 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 7100 5400 50  0001 C CNN
+	1    7100 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 614211D1
+P 7100 6150
+F 0 "D?" V 7054 6510 50  0000 L CNN
+F 1 "6028 LED" V 7145 6510 50  0000 L CNN
+F 2 "" H 7100 6100 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 7100 6100 50  0001 C CNN
+	1    7100 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 614211D7
+P 7100 6800
+F 0 "D?" V 7054 7160 50  0000 L CNN
+F 1 "6028 LED" V 7145 7160 50  0000 L CNN
+F 2 "" H 7100 6750 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 7100 6750 50  0001 C CNN
+	1    7100 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 614DFD82
+P 4700 7600
+F 0 "D?" V 4654 7960 50  0000 L CNN
+F 1 "6028 LED" V 4745 7960 50  0000 L CNN
+F 2 "" H 4700 7550 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 4700 7550 50  0001 C CNN
+	1    4700 7600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 614DFD88
+P 5900 7600
+F 0 "D?" V 5854 7960 50  0000 L CNN
+F 1 "6028 LED" V 5945 7960 50  0000 L CNN
+F 2 "" H 5900 7550 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 5900 7550 50  0001 C CNN
+	1    5900 7600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 614DFD8E
+P 7100 7600
+F 0 "D?" V 7054 7960 50  0000 L CNN
+F 1 "6028 LED" V 7145 7960 50  0000 L CNN
+F 2 "" H 7100 7550 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 7100 7550 50  0001 C CNN
+	1    7100 7600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 61509068
+P 9100 4700
+F 0 "D?" V 9054 5060 50  0000 L CNN
+F 1 "6028 LED" V 9145 5060 50  0000 L CNN
+F 2 "" H 9100 4650 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 9100 4650 50  0001 C CNN
+	1    9100 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 6150906E
+P 9100 5400
+F 0 "D?" V 9054 5760 50  0000 L CNN
+F 1 "6028 LED" V 9145 5760 50  0000 L CNN
+F 2 "" H 9100 5350 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 9100 5350 50  0001 C CNN
+	1    9100 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 61509074
+P 9100 6100
+F 0 "D?" V 9054 6460 50  0000 L CNN
+F 1 "6028 LED" V 9145 6460 50  0000 L CNN
+F 2 "" H 9100 6050 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 9100 6050 50  0001 C CNN
+	1    9100 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 6150907A
+P 9100 6750
+F 0 "D?" V 9054 7110 50  0000 L CNN
+F 1 "6028 LED" V 9145 7110 50  0000 L CNN
+F 2 "" H 9100 6700 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 9100 6700 50  0001 C CNN
+	1    9100 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 61509080
+P 10350 4700
+F 0 "D?" V 10304 5060 50  0000 L CNN
+F 1 "6028 LED" V 10395 5060 50  0000 L CNN
+F 2 "" H 10350 4650 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 10350 4650 50  0001 C CNN
+	1    10350 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 61509086
+P 10350 5400
+F 0 "D?" V 10304 5760 50  0000 L CNN
+F 1 "6028 LED" V 10395 5760 50  0000 L CNN
+F 2 "" H 10350 5350 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 10350 5350 50  0001 C CNN
+	1    10350 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 6150908C
+P 10350 6100
+F 0 "D?" V 10304 6460 50  0000 L CNN
+F 1 "6028 LED" V 10395 6460 50  0000 L CNN
+F 2 "" H 10350 6050 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 10350 6050 50  0001 C CNN
+	1    10350 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 61509092
+P 10350 6750
+F 0 "D?" V 10304 7110 50  0000 L CNN
+F 1 "6028 LED" V 10395 7110 50  0000 L CNN
+F 2 "" H 10350 6700 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 10350 6700 50  0001 C CNN
+	1    10350 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 61509098
+P 11550 4700
+F 0 "D?" V 11504 5060 50  0000 L CNN
+F 1 "6028 LED" V 11595 5060 50  0000 L CNN
+F 2 "" H 11550 4650 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 11550 4650 50  0001 C CNN
+	1    11550 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 6150909E
+P 11550 5400
+F 0 "D?" V 11504 5760 50  0000 L CNN
+F 1 "6028 LED" V 11595 5760 50  0000 L CNN
+F 2 "" H 11550 5350 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 11550 5350 50  0001 C CNN
+	1    11550 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090A4
+P 11550 6100
+F 0 "D?" V 11504 6460 50  0000 L CNN
+F 1 "6028 LED" V 11595 6460 50  0000 L CNN
+F 2 "" H 11550 6050 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 11550 6050 50  0001 C CNN
+	1    11550 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090AA
+P 11550 6750
+F 0 "D?" V 11504 7110 50  0000 L CNN
+F 1 "6028 LED" V 11595 7110 50  0000 L CNN
+F 2 "" H 11550 6700 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 11550 6700 50  0001 C CNN
+	1    11550 6750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090B0
+P 12750 4750
+F 0 "D?" V 12704 5110 50  0000 L CNN
+F 1 "6028 LED" V 12795 5110 50  0000 L CNN
+F 2 "" H 12750 4700 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 12750 4700 50  0001 C CNN
+	1    12750 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090B6
+P 12750 5450
+F 0 "D?" V 12704 5810 50  0000 L CNN
+F 1 "6028 LED" V 12795 5810 50  0000 L CNN
+F 2 "" H 12750 5400 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 12750 5400 50  0001 C CNN
+	1    12750 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090BC
+P 12750 6150
+F 0 "D?" V 12704 6510 50  0000 L CNN
+F 1 "6028 LED" V 12795 6510 50  0000 L CNN
+F 2 "" H 12750 6100 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 12750 6100 50  0001 C CNN
+	1    12750 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090C2
+P 12750 6800
+F 0 "D?" V 12704 7160 50  0000 L CNN
+F 1 "6028 LED" V 12795 7160 50  0000 L CNN
+F 2 "" H 12750 6750 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 12750 6750 50  0001 C CNN
+	1    12750 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090C8
+P 13950 4750
+F 0 "D?" V 13904 5110 50  0000 L CNN
+F 1 "6028 LED" V 13995 5110 50  0000 L CNN
+F 2 "" H 13950 4700 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 13950 4700 50  0001 C CNN
+	1    13950 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090CE
+P 13950 5450
+F 0 "D?" V 13904 5810 50  0000 L CNN
+F 1 "6028 LED" V 13995 5810 50  0000 L CNN
+F 2 "" H 13950 5400 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 13950 5400 50  0001 C CNN
+	1    13950 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090D4
+P 13950 6150
+F 0 "D?" V 13904 6510 50  0000 L CNN
+F 1 "6028 LED" V 13995 6510 50  0000 L CNN
+F 2 "" H 13950 6100 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 13950 6100 50  0001 C CNN
+	1    13950 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090DA
+P 13950 6800
+F 0 "D?" V 13904 7160 50  0000 L CNN
+F 1 "6028 LED" V 13995 7160 50  0000 L CNN
+F 2 "" H 13950 6750 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 13950 6750 50  0001 C CNN
+	1    13950 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090E0
+P 15150 4750
+F 0 "D?" V 15104 5110 50  0000 L CNN
+F 1 "6028 LED" V 15195 5110 50  0000 L CNN
+F 2 "" H 15150 4700 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 15150 4700 50  0001 C CNN
+	1    15150 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090E6
+P 15150 5450
+F 0 "D?" V 15104 5810 50  0000 L CNN
+F 1 "6028 LED" V 15195 5810 50  0000 L CNN
+F 2 "" H 15150 5400 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 15150 5400 50  0001 C CNN
+	1    15150 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090EC
+P 15150 6150
+F 0 "D?" V 15104 6510 50  0000 L CNN
+F 1 "6028 LED" V 15195 6510 50  0000 L CNN
+F 2 "" H 15150 6100 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 15150 6100 50  0001 C CNN
+	1    15150 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090F2
+P 15150 6800
+F 0 "D?" V 15104 7160 50  0000 L CNN
+F 1 "6028 LED" V 15195 7160 50  0000 L CNN
+F 2 "" H 15150 6750 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 15150 6750 50  0001 C CNN
+	1    15150 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090F8
+P 9100 7600
+F 0 "D?" V 9054 7960 50  0000 L CNN
+F 1 "6028 LED" V 9145 7960 50  0000 L CNN
+F 2 "" H 9100 7550 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 9100 7550 50  0001 C CNN
+	1    9100 7600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 615090FE
+P 10300 7600
+F 0 "D?" V 10254 7960 50  0000 L CNN
+F 1 "6028 LED" V 10345 7960 50  0000 L CNN
+F 2 "" H 10300 7550 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 10300 7550 50  0001 C CNN
+	1    10300 7600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_BRAG D?
+U 1 1 61509104
+P 11500 7600
+F 0 "D?" V 11454 7960 50  0000 L CNN
+F 1 "6028 LED" V 11545 7960 50  0000 L CNN
+F 2 "" H 11500 7550 50  0001 C CNN
+F 3 "https://www.aliexpress.com/item/32834931333.html" H 11500 7550 50  0001 C CNN
+	1    11500 7600
+	0    1    1    0   
+$EndComp
+Text GLabel 1800 4300 1    50   Input ~ 0
+Left-CB2
+Text GLabel 1600 4300 1    50   Input ~ 0
+Left-CB3
+Text GLabel 1400 4300 1    50   Input ~ 0
+Left-CB4
+Wire Wire Line
+	850  4300 850  4500
+Wire Wire Line
+	850  4300 1400 4300
+Wire Wire Line
+	1600 4300 1600 4400
+Wire Wire Line
+	1600 4400 1050 4400
+Wire Wire Line
+	1050 4400 1050 4500
+Wire Wire Line
+	1250 4500 1250 4450
+Wire Wire Line
+	1250 4450 1800 4450
+Wire Wire Line
+	1800 4450 1800 4300
+Text GLabel 900  4950 0    50   Input ~ 0
+Left-CB1
+Wire Wire Line
+	900  4950 1050 4950
+Wire Wire Line
+	1050 4950 1050 4900
+Text GLabel 2650 4350 1    50   Input ~ 0
+Left-CA5
+Text GLabel 2400 4350 1    50   Input ~ 0
+Left-CA6
+Text GLabel 2200 4350 1    50   Input ~ 0
+Left-CA7
+Wire Wire Line
+	2200 4350 2200 4450
+Wire Wire Line
+	2200 4450 2100 4450
+Wire Wire Line
+	2100 4450 2100 4500
+Wire Wire Line
+	2300 4500 2300 4450
+Wire Wire Line
+	2300 4450 2400 4450
+Wire Wire Line
+	2400 4450 2400 4350
+Wire Wire Line
+	2500 4500 2500 4450
+Wire Wire Line
+	2500 4450 2650 4450
+Wire Wire Line
+	2650 4450 2650 4350
+Wire Wire Line
+	1050 4950 2300 4950
+Wire Wire Line
+	2300 4950 2300 4900
+Connection ~ 1050 4950
+Text GLabel 3850 4350 1    50   Input ~ 0
+Left-CB1
+Wire Wire Line
+	3850 4350 3850 4450
+Wire Wire Line
+	3850 4450 3700 4450
+Wire Wire Line
+	3700 4450 3700 4500
+Text GLabel 3600 4350 1    50   Input ~ 0
+Left-CB3
+Wire Wire Line
+	3500 4950 3500 4900
+Text GLabel 3150 4950 0    50   Input ~ 0
+Left-CB2
+Wire Wire Line
+	3150 4950 3500 4950
+Wire Wire Line
+	3600 4350 3600 4500
+Wire Wire Line
+	3600 4500 3500 4500
+Text GLabel 3350 4350 1    50   Input ~ 0
+Left-CB4
+Wire Wire Line
+	3350 4350 3350 4450
+Wire Wire Line
+	3350 4450 3300 4450
+Wire Wire Line
+	3300 4450 3300 4500
+Wire Wire Line
+	3500 4950 4700 4950
+Connection ~ 3500 4950
+Text GLabel 5050 4400 1    50   Input ~ 0
+Left-CA5
+Wire Wire Line
+	5050 4400 5050 4500
+Wire Wire Line
+	5050 4500 4900 4500
+Wire Wire Line
+	4900 4500 4900 4550
+Text GLabel 4800 4400 1    50   Input ~ 0
+Left-CA6
+Text GLabel 4600 4400 1    50   Input ~ 0
+Left-CA7
+Wire Wire Line
+	4600 4400 4600 4500
+Wire Wire Line
+	4600 4500 4500 4500
+Wire Wire Line
+	4500 4500 4500 4550
+Wire Wire Line
+	4700 4550 4700 4500
+Wire Wire Line
+	4700 4500 4800 4500
+Wire Wire Line
+	4800 4500 4800 4400
+Text GLabel 5600 4950 0    50   Input ~ 0
+Left-CB3
+Wire Wire Line
+	5600 4950 5900 4950
+Text GLabel 6100 4400 1    50   Input ~ 0
+Left-CB1
+Text GLabel 5900 4400 1    50   Input ~ 0
+Left-CB2
+Text GLabel 5700 4400 1    50   Input ~ 0
+Left-CB4
+Wire Wire Line
+	5700 4400 5700 4550
+Wire Wire Line
+	5900 4400 5900 4550
+Wire Wire Line
+	6100 4400 6100 4550
+Wire Wire Line
+	5900 4950 7100 4950
+Connection ~ 5900 4950
+Text GLabel 7300 4450 1    50   Input ~ 0
+Left-CB5
+Text GLabel 7100 4450 1    50   Input ~ 0
+Left-CB6
+Text GLabel 6900 4450 1    50   Input ~ 0
+Left-CB7
+Wire Wire Line
+	6900 4450 6900 4550
+Wire Wire Line
+	7100 4450 7100 4550
+Wire Wire Line
+	7300 4450 7300 4550
+$EndSCHEMATC

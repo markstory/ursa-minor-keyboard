@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -2627,4 +2627,10 @@ NoConn ~ 5400 6950
 NoConn ~ 5400 7050
 NoConn ~ 5400 7850
 NoConn ~ 5400 7950
+$Sheet
+S 4700 9450 1650 1300
+U 612B701F
+F0 "rgbmatrix" 50
+F1 "rgb matrix.sch" 50
+$EndSheet
 $EndSCHEMATC
