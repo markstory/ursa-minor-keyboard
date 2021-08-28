@@ -1207,7 +1207,7 @@ Col4
 Text GLabel 3700 4350 2    50   Input ~ 0
 Col5
 Text Notes 2800 6200 0    50   ~ 0
-IO Expander
+IO Expander\n\naddress:\n100 + A2 + A1 + A0 + rw\n100000rw
 Wire Wire Line
 	9000 6950 8600 6950
 Connection ~ 9000 6950
