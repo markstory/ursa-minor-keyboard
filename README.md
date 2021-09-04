@@ -13,4 +13,19 @@ You can find a design/build guide on my blog:
 
 ## v01
 
-This directory contains the first draft of the PCB based build. This is still very much a work in progress and no working boards have been produced.
+This directory contains the first drafts of the PCB based build. This is still very much a work in progress and no working boards have been produced.
+
+### v01/base
+
+This is a basic board design. It has has no frills and a smaller parts list.
+Instead of dual microcontrollers, this design uses only a microcontroller and IO
+expander pairing. This lets more cost effective components be used and only requires a single flash operation when updating firmware.
+
+### v01/bling
+
+This board builds on `v01/base` and adds per-key RGB lighting via RGB matrix drivers over I2C.
+
+
+### Firmware?
+
+Firmware for the PCB design is not complete.
