@@ -1,0 +1,2630 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 60F2601E
+P 3100 3250
+F 0 "U1" H 3100 1361 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 3100 1270 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3100 3250 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3100 3250 50  0001 C CNN
+	1    3100 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 60F27C96
+P 3000 850
+F 0 "#PWR0101" H 3000 700 50  0001 C CNN
+F 1 "+5V" H 3015 1023 50  0000 C CNN
+F 2 "" H 3000 850 50  0001 C CNN
+F 3 "" H 3000 850 50  0001 C CNN
+	1    3000 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 1350 3100 1350
+Wire Wire Line
+	3100 1350 3100 1450
+Wire Wire Line
+	3000 850  3000 1350
+Connection ~ 3000 1350
+Wire Wire Line
+	3000 1350 3000 1450
+Wire Wire Line
+	3100 1350 3200 1350
+Wire Wire Line
+	3200 1350 3200 1450
+Connection ~ 3100 1350
+$Comp
+L power:GND #PWR0102
+U 1 1 60F29D58
+P 2600 5050
+F 0 "#PWR0102" H 2600 4800 50  0001 C CNN
+F 1 "GND" H 2605 4877 50  0000 C CNN
+F 2 "" H 2600 5050 50  0001 C CNN
+F 3 "" H 2600 5050 50  0001 C CNN
+	1    2600 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5050 3000 5050
+Connection ~ 3000 5050
+Wire Wire Line
+	3000 5050 3100 5050
+$Comp
+L Device:R_Small R8
+U 1 1 60F2C0D1
+P 4250 3850
+F 0 "R8" V 4054 3850 50  0000 C CNN
+F 1 "10k" V 4145 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4250 3850 50  0001 C CNN
+F 3 "~" H 4250 3850 50  0001 C CNN
+	1    4250 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60F2CBCC
+P 4650 3900
+F 0 "#PWR0103" H 4650 3650 50  0001 C CNN
+F 1 "GND" H 4655 3727 50  0000 C CNN
+F 2 "" H 4650 3900 50  0001 C CNN
+F 3 "" H 4650 3900 50  0001 C CNN
+	1    4650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3850 4650 3850
+Wire Wire Line
+	4650 3850 4650 3900
+Wire Wire Line
+	4150 3850 3700 3850
+$Comp
+L Device:C_Small C3
+U 1 1 60F320BB
+P 2100 3150
+F 0 "C3" H 2192 3196 50  0000 L CNN
+F 1 "1uF" H 2192 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2100 3150 50  0001 C CNN
+F 3 "~" H 2100 3150 50  0001 C CNN
+	1    2100 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3050 2500 3050
+$Comp
+L power:GND #PWR0104
+U 1 1 60F32D30
+P 2100 3550
+F 0 "#PWR0104" H 2100 3300 50  0001 C CNN
+F 1 "GND" H 2105 3377 50  0000 C CNN
+F 2 "" H 2100 3550 50  0001 C CNN
+F 3 "" H 2100 3550 50  0001 C CNN
+	1    2100 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3550 2100 3250
+$Comp
+L Device:C_Small C4
+U 1 1 60F33397
+P 750 4250
+F 0 "C4" H 842 4296 50  0000 L CNN
+F 1 "0.1uF" H 842 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 750 4250 50  0001 C CNN
+F 3 "~" H 750 4250 50  0001 C CNN
+	1    750  4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 60F33752
+P 1200 4250
+F 0 "C5" H 1292 4296 50  0000 L CNN
+F 1 "0.1uF" H 1292 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1200 4250 50  0001 C CNN
+F 3 "~" H 1200 4250 50  0001 C CNN
+	1    1200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 60F33C4C
+P 1600 4250
+F 0 "C6" H 1692 4296 50  0000 L CNN
+F 1 "0.1uF" H 1692 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1600 4250 50  0001 C CNN
+F 3 "~" H 1600 4250 50  0001 C CNN
+	1    1600 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 60F3403D
+P 2050 4250
+F 0 "C7" H 2142 4296 50  0000 L CNN
+F 1 "10uF" H 2142 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2050 4250 50  0001 C CNN
+F 3 "~" H 2050 4250 50  0001 C CNN
+	1    2050 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 60F349B9
+P 1450 4050
+F 0 "#PWR0105" H 1450 3900 50  0001 C CNN
+F 1 "+5V" H 1465 4223 50  0000 C CNN
+F 2 "" H 1450 4050 50  0001 C CNN
+F 3 "" H 1450 4050 50  0001 C CNN
+	1    1450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 60F35672
+P 1450 4550
+F 0 "#PWR0106" H 1450 4300 50  0001 C CNN
+F 1 "GND" H 1455 4377 50  0000 C CNN
+F 2 "" H 1450 4550 50  0001 C CNN
+F 3 "" H 1450 4550 50  0001 C CNN
+	1    1450 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  4350 1200 4350
+Connection ~ 1200 4350
+Wire Wire Line
+	1200 4350 1450 4350
+Connection ~ 1600 4350
+Wire Wire Line
+	1600 4350 2050 4350
+Wire Wire Line
+	1450 4550 1450 4350
+Connection ~ 1450 4350
+Wire Wire Line
+	1450 4350 1600 4350
+Wire Wire Line
+	750  4150 1200 4150
+Connection ~ 1200 4150
+Wire Wire Line
+	1200 4150 1450 4150
+Connection ~ 1600 4150
+Wire Wire Line
+	1600 4150 2050 4150
+Wire Wire Line
+	1450 4050 1450 4150
+Connection ~ 1450 4150
+Wire Wire Line
+	1450 4150 1600 4150
+$Comp
+L power:+5V #PWR0107
+U 1 1 60F3A0DB
+P 2300 2500
+F 0 "#PWR0107" H 2300 2350 50  0001 C CNN
+F 1 "+5V" H 2315 2673 50  0000 C CNN
+F 2 "" H 2300 2500 50  0001 C CNN
+F 3 "" H 2300 2500 50  0001 C CNN
+	1    2300 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2550 2300 2550
+Wire Wire Line
+	2300 2550 2300 2500
+$Comp
+L Device:Crystal_GND24_Small Y1
+U 1 1 60F3BEFE
+P 2050 2050
+F 0 "Y1" V 2004 2194 50  0000 L CNN
+F 1 "16Mhz" V 2095 2194 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 2050 2050 50  0001 C CNN
+F 3 "~" H 2050 2050 50  0001 C CNN
+	1    2050 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 1950 2050 1950
+Wire Wire Line
+	2500 2150 2050 2150
+$Comp
+L Device:C_Small C1
+U 1 1 60F3EEC4
+P 1700 1900
+F 0 "C1" V 1471 1900 50  0000 C CNN
+F 1 "22pF" V 1562 1900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1700 1900 50  0001 C CNN
+F 3 "~" H 1700 1900 50  0001 C CNN
+	1    1700 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 1900 2050 1900
+Wire Wire Line
+	2050 1900 2050 1950
+Connection ~ 2050 1950
+$Comp
+L Device:C_Small C2
+U 1 1 60F3FDA6
+P 1700 2250
+F 0 "C2" V 1471 2250 50  0000 C CNN
+F 1 "22pF" V 1562 2250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1700 2250 50  0001 C CNN
+F 3 "~" H 1700 2250 50  0001 C CNN
+	1    1700 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 60F40842
+P 1400 2450
+F 0 "#PWR0108" H 1400 2200 50  0001 C CNN
+F 1 "GND" H 1405 2277 50  0000 C CNN
+F 2 "" H 1400 2450 50  0001 C CNN
+F 3 "" H 1400 2450 50  0001 C CNN
+	1    1400 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2250 1400 2250
+Wire Wire Line
+	1400 2250 1400 2400
+Wire Wire Line
+	1600 1900 1400 1900
+Wire Wire Line
+	1400 1900 1400 2250
+Connection ~ 1400 2250
+Wire Wire Line
+	1800 2250 2050 2250
+Wire Wire Line
+	2050 2250 2050 2150
+Connection ~ 2050 2150
+Wire Wire Line
+	1950 2050 1950 2300
+Wire Wire Line
+	1950 2400 1400 2400
+Connection ~ 1400 2400
+Wire Wire Line
+	1400 2400 1400 2450
+Wire Wire Line
+	2150 2050 2150 2300
+Wire Wire Line
+	2150 2300 1950 2300
+Connection ~ 1950 2300
+Wire Wire Line
+	1950 2300 1950 2400
+$Comp
+L Switch:SW_Push SW1
+U 1 1 60F454A1
+P 2200 1550
+F 0 "SW1" H 2200 1835 50  0000 C CNN
+F 1 "Reset" H 2200 1744 50  0000 C CNN
+F 2 "Keebio-Parts:SW_SPST_TL3342" H 2200 1750 50  0001 C CNN
+F 3 "~" H 2200 1750 50  0001 C CNN
+	1    2200 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1550 2400 1750
+Wire Wire Line
+	2400 1750 2500 1750
+$Comp
+L power:GND #PWR0109
+U 1 1 60F49E63
+P 1900 1550
+F 0 "#PWR0109" H 1900 1300 50  0001 C CNN
+F 1 "GND" H 1905 1377 50  0000 C CNN
+F 2 "" H 1900 1550 50  0001 C CNN
+F 3 "" H 1900 1550 50  0001 C CNN
+	1    1900 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1550 2000 1550
+$Comp
+L Device:R_Small R1
+U 1 1 60F4BBB6
+P 2500 1250
+F 0 "R1" H 2559 1296 50  0000 L CNN
+F 1 "10k" H 2559 1205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2500 1250 50  0001 C CNN
+F 3 "~" H 2500 1250 50  0001 C CNN
+	1    2500 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1750 2500 1350
+Connection ~ 2500 1750
+$Comp
+L power:+5V #PWR0110
+U 1 1 60F4CE87
+P 2500 950
+F 0 "#PWR0110" H 2500 800 50  0001 C CNN
+F 1 "+5V" H 2515 1123 50  0000 C CNN
+F 2 "" H 2500 950 50  0001 C CNN
+F 3 "" H 2500 950 50  0001 C CNN
+	1    2500 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 950  2500 1150
+Text GLabel 1050 2750 0    50   Input ~ 0
+D+
+Text GLabel 1050 2850 0    50   Input ~ 0
+D-
+Wire Wire Line
+	9150 1900 8750 1900
+Connection ~ 9150 1900
+Wire Wire Line
+	8750 1900 8350 1900
+Connection ~ 8750 1900
+Wire Wire Line
+	8350 1900 7950 1900
+Connection ~ 8350 1900
+Wire Wire Line
+	7950 1900 7550 1900
+Connection ~ 7950 1900
+Wire Wire Line
+	7550 1900 7400 1900
+Connection ~ 7550 1900
+Wire Wire Line
+	9550 1900 9150 1900
+Wire Wire Line
+	7950 1600 8050 1600
+Wire Wire Line
+	8350 1600 8450 1600
+Wire Wire Line
+	8750 1600 8850 1600
+Wire Wire Line
+	9150 1600 9250 1600
+Wire Wire Line
+	9550 1600 9650 1600
+$Comp
+L Diode:1N4148W D6
+U 1 1 60FA0916
+P 9550 1750
+F 0 "D6" V 9596 1670 50  0000 R CNN
+F 1 "1N4148W" V 9505 1670 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9550 1575 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9550 1750 50  0001 C CNN
+	1    9550 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D5
+U 1 1 60F9FA9E
+P 9150 1750
+F 0 "D5" V 9196 1670 50  0000 R CNN
+F 1 "1N4148W" V 9105 1670 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9150 1575 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9150 1750 50  0001 C CNN
+	1    9150 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D4
+U 1 1 60F9F0AF
+P 8750 1750
+F 0 "D4" V 8796 1670 50  0000 R CNN
+F 1 "1N4148W" V 8705 1670 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8750 1575 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8750 1750 50  0001 C CNN
+	1    8750 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D3
+U 1 1 60F9DEBA
+P 8350 1750
+F 0 "D3" V 8396 1670 50  0000 R CNN
+F 1 "1N4148W" V 8305 1670 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8350 1575 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8350 1750 50  0001 C CNN
+	1    8350 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D2
+U 1 1 60F9C357
+P 7950 1750
+F 0 "D2" V 7996 1670 50  0000 R CNN
+F 1 "1N4148W" V 7905 1670 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7950 1575 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7950 1750 50  0001 C CNN
+	1    7950 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7550 1600 7650 1600
+$Comp
+L Diode:1N4148W D1
+U 1 1 60F9786C
+P 7550 1750
+F 0 "D1" V 7596 1670 50  0000 R CNN
+F 1 "1N4148W" V 7505 1670 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7550 1575 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7550 1750 50  0001 C CNN
+	1    7550 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX6
+U 1 1 60F80AD4
+P 9700 1450
+F 0 "MX6" H 9733 1673 60  0000 C CNN
+F 1 "K0_5" H 9733 1599 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 9075 1425 60  0001 C CNN
+F 3 "" H 9075 1425 60  0001 C CNN
+	1    9700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX5
+U 1 1 60F8049F
+P 9300 1450
+F 0 "MX5" H 9333 1673 60  0000 C CNN
+F 1 "K0_4" H 9333 1599 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8675 1425 60  0001 C CNN
+F 3 "" H 8675 1425 60  0001 C CNN
+	1    9300 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX4
+U 1 1 60F7FFFC
+P 8900 1450
+F 0 "MX4" H 8933 1673 60  0000 C CNN
+F 1 "K0_3" H 8933 1599 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8275 1425 60  0001 C CNN
+F 3 "" H 8275 1425 60  0001 C CNN
+	1    8900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX3
+U 1 1 60F7FB51
+P 8500 1450
+F 0 "MX3" H 8533 1673 60  0000 C CNN
+F 1 "K0_2" H 8533 1599 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7875 1425 60  0001 C CNN
+F 3 "" H 7875 1425 60  0001 C CNN
+	1    8500 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX2
+U 1 1 60F7F784
+P 8100 1450
+F 0 "MX2" H 8133 1673 60  0000 C CNN
+F 1 "K0_1" H 8133 1599 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7475 1425 60  0001 C CNN
+F 3 "" H 7475 1425 60  0001 C CNN
+	1    8100 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 2700 8750 2700
+Connection ~ 9150 2700
+Wire Wire Line
+	8750 2700 8350 2700
+Connection ~ 8750 2700
+Wire Wire Line
+	8350 2700 7950 2700
+Connection ~ 8350 2700
+Wire Wire Line
+	7950 2700 7550 2700
+Connection ~ 7950 2700
+Wire Wire Line
+	7550 2700 7400 2700
+Connection ~ 7550 2700
+Wire Wire Line
+	9550 2700 9150 2700
+Wire Wire Line
+	7950 2400 8050 2400
+Wire Wire Line
+	8350 2400 8450 2400
+Wire Wire Line
+	8750 2400 8850 2400
+Wire Wire Line
+	9150 2400 9250 2400
+Wire Wire Line
+	9550 2400 9650 2400
+$Comp
+L Diode:1N4148W D12
+U 1 1 60FF9057
+P 9550 2550
+F 0 "D12" V 9596 2470 50  0000 R CNN
+F 1 "1N4148W" V 9505 2470 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9550 2375 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9550 2550 50  0001 C CNN
+	1    9550 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D11
+U 1 1 60FF905D
+P 9150 2550
+F 0 "D11" V 9196 2470 50  0000 R CNN
+F 1 "1N4148W" V 9105 2470 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9150 2375 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9150 2550 50  0001 C CNN
+	1    9150 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D10
+U 1 1 60FF9063
+P 8750 2550
+F 0 "D10" V 8796 2470 50  0000 R CNN
+F 1 "1N4148W" V 8705 2470 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8750 2375 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8750 2550 50  0001 C CNN
+	1    8750 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D9
+U 1 1 60FF9069
+P 8350 2550
+F 0 "D9" V 8396 2470 50  0000 R CNN
+F 1 "1N4148W" V 8305 2470 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8350 2375 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8350 2550 50  0001 C CNN
+	1    8350 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D8
+U 1 1 60FF906F
+P 7950 2550
+F 0 "D8" V 7996 2470 50  0000 R CNN
+F 1 "1N4148W" V 7905 2470 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7950 2375 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7950 2550 50  0001 C CNN
+	1    7950 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7550 2400 7650 2400
+$Comp
+L Diode:1N4148W D7
+U 1 1 60FF9076
+P 7550 2550
+F 0 "D7" V 7596 2470 50  0000 R CNN
+F 1 "1N4148W" V 7505 2470 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7550 2375 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7550 2550 50  0001 C CNN
+	1    7550 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX12
+U 1 1 60FF907C
+P 9700 2250
+F 0 "MX12" H 9733 2473 60  0000 C CNN
+F 1 "K1_5" H 9733 2399 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 9075 2225 60  0001 C CNN
+F 3 "" H 9075 2225 60  0001 C CNN
+	1    9700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX11
+U 1 1 60FF9082
+P 9300 2250
+F 0 "MX11" H 9333 2473 60  0000 C CNN
+F 1 "K1_4" H 9333 2399 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8675 2225 60  0001 C CNN
+F 3 "" H 8675 2225 60  0001 C CNN
+	1    9300 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX10
+U 1 1 60FF9088
+P 8900 2250
+F 0 "MX10" H 8933 2473 60  0000 C CNN
+F 1 "K1_3" H 8933 2399 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8275 2225 60  0001 C CNN
+F 3 "" H 8275 2225 60  0001 C CNN
+	1    8900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX9
+U 1 1 60FF908E
+P 8500 2250
+F 0 "MX9" H 8533 2473 60  0000 C CNN
+F 1 "K1_2" H 8533 2399 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7875 2225 60  0001 C CNN
+F 3 "" H 7875 2225 60  0001 C CNN
+	1    8500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX8
+U 1 1 60FF9094
+P 8100 2250
+F 0 "MX8" H 8133 2473 60  0000 C CNN
+F 1 "K1_1" H 8133 2399 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7475 2225 60  0001 C CNN
+F 3 "" H 7475 2225 60  0001 C CNN
+	1    8100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX7
+U 1 1 60FF909A
+P 7700 2250
+F 0 "MX7" H 7733 2473 60  0000 C CNN
+F 1 "K1_0" H 7733 2399 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7075 2225 60  0001 C CNN
+F 3 "" H 7075 2225 60  0001 C CNN
+	1    7700 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3500 8750 3500
+Connection ~ 9150 3500
+Wire Wire Line
+	8750 3500 8350 3500
+Connection ~ 8750 3500
+Wire Wire Line
+	8350 3500 7950 3500
+Connection ~ 8350 3500
+Wire Wire Line
+	7950 3500 7550 3500
+Connection ~ 7950 3500
+Wire Wire Line
+	7550 3500 7400 3500
+Connection ~ 7550 3500
+Wire Wire Line
+	9550 3500 9150 3500
+Wire Wire Line
+	7950 3200 8050 3200
+Wire Wire Line
+	8350 3200 8450 3200
+Wire Wire Line
+	8750 3200 8850 3200
+Wire Wire Line
+	9150 3200 9250 3200
+Wire Wire Line
+	9550 3200 9650 3200
+$Comp
+L Diode:1N4148W D18
+U 1 1 6100B73C
+P 9550 3350
+F 0 "D18" V 9596 3270 50  0000 R CNN
+F 1 "1N4148W" V 9505 3270 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9550 3175 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9550 3350 50  0001 C CNN
+	1    9550 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D17
+U 1 1 6100B742
+P 9150 3350
+F 0 "D17" V 9196 3270 50  0000 R CNN
+F 1 "1N4148W" V 9105 3270 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9150 3175 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9150 3350 50  0001 C CNN
+	1    9150 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D16
+U 1 1 6100B748
+P 8750 3350
+F 0 "D16" V 8796 3270 50  0000 R CNN
+F 1 "1N4148W" V 8705 3270 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8750 3175 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8750 3350 50  0001 C CNN
+	1    8750 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D15
+U 1 1 6100B74E
+P 8350 3350
+F 0 "D15" V 8396 3270 50  0000 R CNN
+F 1 "1N4148W" V 8305 3270 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8350 3175 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8350 3350 50  0001 C CNN
+	1    8350 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D14
+U 1 1 6100B754
+P 7950 3350
+F 0 "D14" V 7996 3270 50  0000 R CNN
+F 1 "1N4148W" V 7905 3270 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7950 3175 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7950 3350 50  0001 C CNN
+	1    7950 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7550 3200 7650 3200
+$Comp
+L Diode:1N4148W D13
+U 1 1 6100B75B
+P 7550 3350
+F 0 "D13" V 7596 3270 50  0000 R CNN
+F 1 "1N4148W" V 7505 3270 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7550 3175 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7550 3350 50  0001 C CNN
+	1    7550 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX18
+U 1 1 6100B761
+P 9700 3050
+F 0 "MX18" H 9733 3273 60  0000 C CNN
+F 1 "K2_5" H 9733 3199 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 9075 3025 60  0001 C CNN
+F 3 "" H 9075 3025 60  0001 C CNN
+	1    9700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX17
+U 1 1 6100B767
+P 9300 3050
+F 0 "MX17" H 9333 3273 60  0000 C CNN
+F 1 "K2_4" H 9333 3199 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8675 3025 60  0001 C CNN
+F 3 "" H 8675 3025 60  0001 C CNN
+	1    9300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX16
+U 1 1 6100B76D
+P 8900 3050
+F 0 "MX16" H 8933 3273 60  0000 C CNN
+F 1 "K2_3" H 8933 3199 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8275 3025 60  0001 C CNN
+F 3 "" H 8275 3025 60  0001 C CNN
+	1    8900 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX15
+U 1 1 6100B773
+P 8500 3050
+F 0 "MX15" H 8533 3273 60  0000 C CNN
+F 1 "K2_2" H 8533 3199 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7875 3025 60  0001 C CNN
+F 3 "" H 7875 3025 60  0001 C CNN
+	1    8500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX14
+U 1 1 6100B779
+P 8100 3050
+F 0 "MX14" H 8133 3273 60  0000 C CNN
+F 1 "K2_1" H 8133 3199 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7475 3025 60  0001 C CNN
+F 3 "" H 7475 3025 60  0001 C CNN
+	1    8100 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX13
+U 1 1 6100B77F
+P 7700 3050
+F 0 "MX13" H 7733 3273 60  0000 C CNN
+F 1 "K2_0" H 7733 3199 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7075 3025 60  0001 C CNN
+F 3 "" H 7075 3025 60  0001 C CNN
+	1    7700 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4300 8750 4300
+Connection ~ 9150 4300
+Wire Wire Line
+	8750 4300 8350 4300
+Connection ~ 8750 4300
+Wire Wire Line
+	8350 4300 7950 4300
+Connection ~ 8350 4300
+Wire Wire Line
+	7950 4300 7550 4300
+Connection ~ 7950 4300
+Wire Wire Line
+	7550 4300 7400 4300
+Connection ~ 7550 4300
+Wire Wire Line
+	9550 4300 9150 4300
+Wire Wire Line
+	7950 4000 8050 4000
+Wire Wire Line
+	8350 4000 8450 4000
+Wire Wire Line
+	8750 4000 8850 4000
+Wire Wire Line
+	9150 4000 9250 4000
+Wire Wire Line
+	9550 4000 9650 4000
+$Comp
+L Diode:1N4148W D24
+U 1 1 6100B795
+P 9550 4150
+F 0 "D24" V 9596 4070 50  0000 R CNN
+F 1 "1N4148W" V 9505 4070 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9550 3975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9550 4150 50  0001 C CNN
+	1    9550 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D23
+U 1 1 6100B79B
+P 9150 4150
+F 0 "D23" V 9196 4070 50  0000 R CNN
+F 1 "1N4148W" V 9105 4070 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9150 3975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9150 4150 50  0001 C CNN
+	1    9150 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D22
+U 1 1 6100B7A1
+P 8750 4150
+F 0 "D22" V 8796 4070 50  0000 R CNN
+F 1 "1N4148W" V 8705 4070 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8750 3975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8750 4150 50  0001 C CNN
+	1    8750 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D21
+U 1 1 6100B7A7
+P 8350 4150
+F 0 "D21" V 8396 4070 50  0000 R CNN
+F 1 "1N4148W" V 8305 4070 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8350 3975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8350 4150 50  0001 C CNN
+	1    8350 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D20
+U 1 1 6100B7AD
+P 7950 4150
+F 0 "D20" V 7996 4070 50  0000 R CNN
+F 1 "1N4148W" V 7905 4070 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7950 3975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7950 4150 50  0001 C CNN
+	1    7950 4150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7550 4000 7650 4000
+$Comp
+L Diode:1N4148W D19
+U 1 1 6100B7B4
+P 7550 4150
+F 0 "D19" V 7596 4070 50  0000 R CNN
+F 1 "1N4148W" V 7505 4070 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7550 3975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7550 4150 50  0001 C CNN
+	1    7550 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX24
+U 1 1 6100B7BA
+P 9700 3850
+F 0 "MX24" H 9733 4073 60  0000 C CNN
+F 1 "K3_5" H 9733 3999 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 9075 3825 60  0001 C CNN
+F 3 "" H 9075 3825 60  0001 C CNN
+	1    9700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX23
+U 1 1 6100B7C0
+P 9300 3850
+F 0 "MX23" H 9333 4073 60  0000 C CNN
+F 1 "K3_4" H 9333 3999 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8675 3825 60  0001 C CNN
+F 3 "" H 8675 3825 60  0001 C CNN
+	1    9300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX22
+U 1 1 6100B7C6
+P 8900 3850
+F 0 "MX22" H 8933 4073 60  0000 C CNN
+F 1 "K3_3" H 8933 3999 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8275 3825 60  0001 C CNN
+F 3 "" H 8275 3825 60  0001 C CNN
+	1    8900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX21
+U 1 1 6100B7CC
+P 8500 3850
+F 0 "MX21" H 8533 4073 60  0000 C CNN
+F 1 "K3_2" H 8533 3999 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7875 3825 60  0001 C CNN
+F 3 "" H 7875 3825 60  0001 C CNN
+	1    8500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX20
+U 1 1 6100B7D2
+P 8100 3850
+F 0 "MX20" H 8133 4073 60  0000 C CNN
+F 1 "K3_1" H 8133 3999 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7475 3825 60  0001 C CNN
+F 3 "" H 7475 3825 60  0001 C CNN
+	1    8100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX19
+U 1 1 6100B7D8
+P 7700 3850
+F 0 "MX19" H 7733 4073 60  0000 C CNN
+F 1 "K3_0" H 7733 3999 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7075 3825 60  0001 C CNN
+F 3 "" H 7075 3825 60  0001 C CNN
+	1    7700 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 5100 9150 5100
+Wire Wire Line
+	9150 5100 8750 5100
+Connection ~ 9150 5100
+Wire Wire Line
+	8750 5100 8600 5100
+Connection ~ 8750 5100
+Wire Wire Line
+	9150 4800 9250 4800
+Wire Wire Line
+	9550 4800 9650 4800
+$Comp
+L Diode:1N4148W D27
+U 1 1 6101A163
+P 9550 4950
+F 0 "D27" V 9596 4870 50  0000 R CNN
+F 1 "1N4148W" V 9505 4870 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9550 4775 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9550 4950 50  0001 C CNN
+	1    9550 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D26
+U 1 1 6101A169
+P 9150 4950
+F 0 "D26" V 9196 4870 50  0000 R CNN
+F 1 "1N4148W" V 9105 4870 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9150 4775 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9150 4950 50  0001 C CNN
+	1    9150 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8750 4800 8850 4800
+$Comp
+L Diode:1N4148W D25
+U 1 1 6101A170
+P 8750 4950
+F 0 "D25" V 8796 4870 50  0000 R CNN
+F 1 "1N4148W" V 8705 4870 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8750 4775 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8750 4950 50  0001 C CNN
+	1    8750 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX27
+U 1 1 6101A176
+P 9700 4650
+F 0 "MX27" H 9733 4873 60  0000 C CNN
+F 1 "K4_5" H 9733 4799 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 9075 4625 60  0001 C CNN
+F 3 "" H 9075 4625 60  0001 C CNN
+	1    9700 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX26
+U 1 1 6101A17C
+P 9300 4650
+F 0 "MX26" H 9333 4873 60  0000 C CNN
+F 1 "K4_4" H 9333 4799 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8675 4625 60  0001 C CNN
+F 3 "" H 8675 4625 60  0001 C CNN
+	1    9300 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX25
+U 1 1 6101A182
+P 8900 4650
+F 0 "MX25" H 8933 4873 60  0000 C CNN
+F 1 "K4_3" H 8933 4799 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8275 4625 60  0001 C CNN
+F 3 "" H 8275 4625 60  0001 C CNN
+	1    8900 4650
+	1    0    0    -1  
+$EndComp
+Text Notes 7850 750  0    50   ~ 0
+Left Side Matrix\n
+Text Notes 4800 700  0    50   ~ 0
+Host USB Connection
+Text Notes 2300 600  0    50   ~ 0
+Microprocessor
+Text Notes 800  3800 0    50   ~ 0
+Decoupling capacitors
+Wire Wire Line
+	7850 1400 7850 2200
+Connection ~ 7850 2200
+Wire Wire Line
+	7850 2200 7850 3000
+Connection ~ 7850 3000
+Wire Wire Line
+	7850 3000 7850 3800
+Text GLabel 7400 1900 0    50   Input ~ 0
+Row0-L
+Text GLabel 7400 2700 0    50   Input ~ 0
+Row1-L
+Text GLabel 7400 3500 0    50   Input ~ 0
+Row2-L
+Text GLabel 7400 4300 0    50   Input ~ 0
+Row3-L
+Text GLabel 8600 5100 0    50   Input ~ 0
+Row4-L
+Text GLabel 7850 1150 1    50   Input ~ 0
+Col0
+Wire Wire Line
+	7850 1150 7850 1400
+Connection ~ 7850 1400
+Wire Wire Line
+	8250 1400 8250 2200
+Connection ~ 8250 2200
+Wire Wire Line
+	8250 2200 8250 3000
+Connection ~ 8250 3000
+Wire Wire Line
+	8250 3000 8250 3800
+Text GLabel 8250 1150 1    50   Input ~ 0
+Col1
+Wire Wire Line
+	8250 1150 8250 1400
+Connection ~ 8250 1400
+Wire Wire Line
+	8650 1400 8650 2200
+Connection ~ 8650 2200
+Wire Wire Line
+	8650 2200 8650 3000
+Connection ~ 8650 3000
+Wire Wire Line
+	8650 3000 8650 3800
+Text GLabel 8650 1150 1    50   Input ~ 0
+Col2
+Wire Wire Line
+	8650 1150 8650 1400
+Connection ~ 8650 1400
+Wire Wire Line
+	9050 1400 9050 2200
+Connection ~ 9050 2200
+Wire Wire Line
+	9050 2200 9050 3000
+Connection ~ 9050 3000
+Wire Wire Line
+	9050 3000 9050 3800
+Text GLabel 9050 1150 1    50   Input ~ 0
+Col3
+Wire Wire Line
+	9050 1150 9050 1400
+Connection ~ 9050 1400
+Wire Wire Line
+	9450 1400 9450 2200
+Connection ~ 9450 2200
+Wire Wire Line
+	9450 2200 9450 3000
+Connection ~ 9450 3000
+Wire Wire Line
+	9450 3000 9450 3800
+Text GLabel 9450 1150 1    50   Input ~ 0
+Col4
+Wire Wire Line
+	9450 1150 9450 1400
+Connection ~ 9450 1400
+Wire Wire Line
+	9850 1400 9850 2200
+Connection ~ 9850 2200
+Wire Wire Line
+	9850 2200 9850 3000
+Connection ~ 9850 3000
+Wire Wire Line
+	9850 3000 9850 3800
+Text GLabel 9850 1150 1    50   Input ~ 0
+Col5
+Wire Wire Line
+	9850 1150 9850 1400
+Connection ~ 9850 1400
+Wire Wire Line
+	9850 3800 9850 4600
+Connection ~ 9850 3800
+Wire Wire Line
+	9450 3800 9450 4600
+Connection ~ 9450 3800
+Wire Wire Line
+	9050 3800 9050 4600
+Connection ~ 9050 3800
+Text GLabel 3700 2350 2    50   Input ~ 0
+Row0-L
+Text GLabel 3700 2250 2    50   Input ~ 0
+Row1-L
+Text GLabel 3700 1850 2    50   Input ~ 0
+Row2-L
+Text GLabel 3700 3650 2    50   Input ~ 0
+Row3-L
+Text GLabel 3700 3550 2    50   Input ~ 0
+Row4-L
+Text GLabel 3700 2050 2    50   Input ~ 0
+Col0
+Text GLabel 3700 1950 2    50   Input ~ 0
+Col1
+Text GLabel 3700 2150 2    50   Input ~ 0
+Col2
+Text GLabel 3700 4150 2    50   Input ~ 0
+Col3
+Text GLabel 3700 4250 2    50   Input ~ 0
+Col4
+Text GLabel 3700 4350 2    50   Input ~ 0
+Col5
+Text Notes 2800 6200 0    50   ~ 0
+IO Expander
+Wire Wire Line
+	9000 6950 8600 6950
+Connection ~ 9000 6950
+Wire Wire Line
+	8600 6950 8200 6950
+Connection ~ 8600 6950
+Wire Wire Line
+	8200 6950 7800 6950
+Connection ~ 8200 6950
+Wire Wire Line
+	7800 6950 7400 6950
+Connection ~ 7800 6950
+Wire Wire Line
+	7400 6950 7250 6950
+Connection ~ 7400 6950
+Wire Wire Line
+	9400 6950 9000 6950
+Wire Wire Line
+	7800 6650 7900 6650
+Wire Wire Line
+	8200 6650 8300 6650
+Wire Wire Line
+	8600 6650 8700 6650
+Wire Wire Line
+	9000 6650 9100 6650
+Wire Wire Line
+	9400 6650 9500 6650
+$Comp
+L Diode:1N4148W D33
+U 1 1 6122E16B
+P 9400 6800
+F 0 "D33" V 9446 6720 50  0000 R CNN
+F 1 "1N4148W" V 9355 6720 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9400 6625 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9400 6800 50  0001 C CNN
+	1    9400 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D32
+U 1 1 6122E171
+P 9000 6800
+F 0 "D32" V 9046 6720 50  0000 R CNN
+F 1 "1N4148W" V 8955 6720 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9000 6625 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9000 6800 50  0001 C CNN
+	1    9000 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D31
+U 1 1 6122E177
+P 8600 6800
+F 0 "D31" V 8646 6720 50  0000 R CNN
+F 1 "1N4148W" V 8555 6720 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8600 6625 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8600 6800 50  0001 C CNN
+	1    8600 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D30
+U 1 1 6122E17D
+P 8200 6800
+F 0 "D30" V 8246 6720 50  0000 R CNN
+F 1 "1N4148W" V 8155 6720 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8200 6625 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8200 6800 50  0001 C CNN
+	1    8200 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D29
+U 1 1 6122E183
+P 7800 6800
+F 0 "D29" V 7846 6720 50  0000 R CNN
+F 1 "1N4148W" V 7755 6720 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7800 6625 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7800 6800 50  0001 C CNN
+	1    7800 6800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 6650 7500 6650
+$Comp
+L Diode:1N4148W D28
+U 1 1 6122E18A
+P 7400 6800
+F 0 "D28" V 7446 6720 50  0000 R CNN
+F 1 "1N4148W" V 7355 6720 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7400 6625 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7400 6800 50  0001 C CNN
+	1    7400 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX33
+U 1 1 6122E190
+P 9550 6500
+F 0 "MX33" H 9583 6723 60  0000 C CNN
+F 1 "K0_11" H 9583 6649 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8925 6475 60  0001 C CNN
+F 3 "" H 8925 6475 60  0001 C CNN
+	1    9550 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX32
+U 1 1 6122E196
+P 9150 6500
+F 0 "MX32" H 9183 6723 60  0000 C CNN
+F 1 "K0_10" H 9183 6649 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8525 6475 60  0001 C CNN
+F 3 "" H 8525 6475 60  0001 C CNN
+	1    9150 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX31
+U 1 1 6122E19C
+P 8750 6500
+F 0 "MX31" H 8783 6723 60  0000 C CNN
+F 1 "K0_9" H 8783 6649 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8125 6475 60  0001 C CNN
+F 3 "" H 8125 6475 60  0001 C CNN
+	1    8750 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX30
+U 1 1 6122E1A2
+P 8350 6500
+F 0 "MX30" H 8383 6723 60  0000 C CNN
+F 1 "K0_8" H 8383 6649 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7725 6475 60  0001 C CNN
+F 3 "" H 7725 6475 60  0001 C CNN
+	1    8350 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX29
+U 1 1 6122E1A8
+P 7950 6500
+F 0 "MX29" H 7983 6723 60  0000 C CNN
+F 1 "K0_7" H 7983 6649 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7325 6475 60  0001 C CNN
+F 3 "" H 7325 6475 60  0001 C CNN
+	1    7950 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX28
+U 1 1 6122E1AE
+P 7550 6500
+F 0 "MX28" H 7583 6723 60  0000 C CNN
+F 1 "K0_6" H 7583 6649 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 6925 6475 60  0001 C CNN
+F 3 "" H 6925 6475 60  0001 C CNN
+	1    7550 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 7750 8600 7750
+Connection ~ 9000 7750
+Wire Wire Line
+	8600 7750 8200 7750
+Connection ~ 8600 7750
+Wire Wire Line
+	8200 7750 7800 7750
+Connection ~ 8200 7750
+Wire Wire Line
+	7800 7750 7400 7750
+Connection ~ 7800 7750
+Wire Wire Line
+	7400 7750 7250 7750
+Connection ~ 7400 7750
+Wire Wire Line
+	9400 7750 9000 7750
+Wire Wire Line
+	7800 7450 7900 7450
+Wire Wire Line
+	8200 7450 8300 7450
+Wire Wire Line
+	8600 7450 8700 7450
+Wire Wire Line
+	9000 7450 9100 7450
+Wire Wire Line
+	9400 7450 9500 7450
+$Comp
+L Diode:1N4148W D39
+U 1 1 6122E1C4
+P 9400 7600
+F 0 "D39" V 9446 7520 50  0000 R CNN
+F 1 "1N4148W" V 9355 7520 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9400 7425 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9400 7600 50  0001 C CNN
+	1    9400 7600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D38
+U 1 1 6122E1CA
+P 9000 7600
+F 0 "D38" V 9046 7520 50  0000 R CNN
+F 1 "1N4148W" V 8955 7520 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9000 7425 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9000 7600 50  0001 C CNN
+	1    9000 7600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D37
+U 1 1 6122E1D0
+P 8600 7600
+F 0 "D37" V 8646 7520 50  0000 R CNN
+F 1 "1N4148W" V 8555 7520 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8600 7425 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8600 7600 50  0001 C CNN
+	1    8600 7600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D36
+U 1 1 6122E1D6
+P 8200 7600
+F 0 "D36" V 8246 7520 50  0000 R CNN
+F 1 "1N4148W" V 8155 7520 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8200 7425 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8200 7600 50  0001 C CNN
+	1    8200 7600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D35
+U 1 1 6122E1DC
+P 7800 7600
+F 0 "D35" V 7846 7520 50  0000 R CNN
+F 1 "1N4148W" V 7755 7520 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7800 7425 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7800 7600 50  0001 C CNN
+	1    7800 7600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 7450 7500 7450
+$Comp
+L Diode:1N4148W D34
+U 1 1 6122E1E3
+P 7400 7600
+F 0 "D34" V 7446 7520 50  0000 R CNN
+F 1 "1N4148W" V 7355 7520 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7400 7425 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7400 7600 50  0001 C CNN
+	1    7400 7600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX39
+U 1 1 6122E1E9
+P 9550 7300
+F 0 "MX39" H 9583 7523 60  0000 C CNN
+F 1 "K1_11" H 9583 7449 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8925 7275 60  0001 C CNN
+F 3 "" H 8925 7275 60  0001 C CNN
+	1    9550 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX38
+U 1 1 6122E1EF
+P 9150 7300
+F 0 "MX38" H 9183 7523 60  0000 C CNN
+F 1 "K1_10" H 9183 7449 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8525 7275 60  0001 C CNN
+F 3 "" H 8525 7275 60  0001 C CNN
+	1    9150 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX37
+U 1 1 6122E1F5
+P 8750 7300
+F 0 "MX37" H 8783 7523 60  0000 C CNN
+F 1 "K1_9" H 8783 7449 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8125 7275 60  0001 C CNN
+F 3 "" H 8125 7275 60  0001 C CNN
+	1    8750 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX36
+U 1 1 6122E1FB
+P 8350 7300
+F 0 "MX36" H 8383 7523 60  0000 C CNN
+F 1 "K1_8" H 8383 7449 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7725 7275 60  0001 C CNN
+F 3 "" H 7725 7275 60  0001 C CNN
+	1    8350 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX35
+U 1 1 6122E201
+P 7950 7300
+F 0 "MX35" H 7983 7523 60  0000 C CNN
+F 1 "K1_7" H 7983 7449 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7325 7275 60  0001 C CNN
+F 3 "" H 7325 7275 60  0001 C CNN
+	1    7950 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX34
+U 1 1 6122E207
+P 7550 7300
+F 0 "MX34" H 7583 7523 60  0000 C CNN
+F 1 "K1_6" H 7583 7449 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 6925 7275 60  0001 C CNN
+F 3 "" H 6925 7275 60  0001 C CNN
+	1    7550 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 8550 8600 8550
+Connection ~ 9000 8550
+Wire Wire Line
+	8600 8550 8200 8550
+Connection ~ 8600 8550
+Wire Wire Line
+	8200 8550 7800 8550
+Connection ~ 8200 8550
+Wire Wire Line
+	7800 8550 7400 8550
+Connection ~ 7800 8550
+Wire Wire Line
+	7400 8550 7250 8550
+Connection ~ 7400 8550
+Wire Wire Line
+	9400 8550 9000 8550
+Wire Wire Line
+	7800 8250 7900 8250
+Wire Wire Line
+	8200 8250 8300 8250
+Wire Wire Line
+	8600 8250 8700 8250
+Wire Wire Line
+	9000 8250 9100 8250
+Wire Wire Line
+	9400 8250 9500 8250
+$Comp
+L Diode:1N4148W D45
+U 1 1 6122E21D
+P 9400 8400
+F 0 "D45" V 9446 8320 50  0000 R CNN
+F 1 "1N4148W" V 9355 8320 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9400 8225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9400 8400 50  0001 C CNN
+	1    9400 8400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D44
+U 1 1 6122E223
+P 9000 8400
+F 0 "D44" V 9046 8320 50  0000 R CNN
+F 1 "1N4148W" V 8955 8320 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9000 8225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9000 8400 50  0001 C CNN
+	1    9000 8400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D43
+U 1 1 6122E229
+P 8600 8400
+F 0 "D43" V 8646 8320 50  0000 R CNN
+F 1 "1N4148W" V 8555 8320 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8600 8225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8600 8400 50  0001 C CNN
+	1    8600 8400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D42
+U 1 1 6122E22F
+P 8200 8400
+F 0 "D42" V 8246 8320 50  0000 R CNN
+F 1 "1N4148W" V 8155 8320 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8200 8225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8200 8400 50  0001 C CNN
+	1    8200 8400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D41
+U 1 1 6122E235
+P 7800 8400
+F 0 "D41" V 7846 8320 50  0000 R CNN
+F 1 "1N4148W" V 7755 8320 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7800 8225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7800 8400 50  0001 C CNN
+	1    7800 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 8250 7500 8250
+$Comp
+L Diode:1N4148W D40
+U 1 1 6122E23C
+P 7400 8400
+F 0 "D40" V 7446 8320 50  0000 R CNN
+F 1 "1N4148W" V 7355 8320 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7400 8225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7400 8400 50  0001 C CNN
+	1    7400 8400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX45
+U 1 1 6122E242
+P 9550 8100
+F 0 "MX45" H 9583 8323 60  0000 C CNN
+F 1 "K2_11" H 9583 8249 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8925 8075 60  0001 C CNN
+F 3 "" H 8925 8075 60  0001 C CNN
+	1    9550 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX44
+U 1 1 6122E248
+P 9150 8100
+F 0 "MX44" H 9183 8323 60  0000 C CNN
+F 1 "K2_10" H 9183 8249 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8525 8075 60  0001 C CNN
+F 3 "" H 8525 8075 60  0001 C CNN
+	1    9150 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX43
+U 1 1 6122E24E
+P 8750 8100
+F 0 "MX43" H 8783 8323 60  0000 C CNN
+F 1 "K2_9" H 8783 8249 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8125 8075 60  0001 C CNN
+F 3 "" H 8125 8075 60  0001 C CNN
+	1    8750 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX42
+U 1 1 6122E254
+P 8350 8100
+F 0 "MX42" H 8383 8323 60  0000 C CNN
+F 1 "K2_8" H 8383 8249 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7725 8075 60  0001 C CNN
+F 3 "" H 7725 8075 60  0001 C CNN
+	1    8350 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX41
+U 1 1 6122E25A
+P 7950 8100
+F 0 "MX41" H 7983 8323 60  0000 C CNN
+F 1 "K2_7" H 7983 8249 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7325 8075 60  0001 C CNN
+F 3 "" H 7325 8075 60  0001 C CNN
+	1    7950 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX40
+U 1 1 6122E260
+P 7550 8100
+F 0 "MX40" H 7583 8323 60  0000 C CNN
+F 1 "K2_6" H 7583 8249 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 6925 8075 60  0001 C CNN
+F 3 "" H 6925 8075 60  0001 C CNN
+	1    7550 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 9350 8600 9350
+Connection ~ 9000 9350
+Wire Wire Line
+	8600 9350 8200 9350
+Connection ~ 8600 9350
+Wire Wire Line
+	8200 9350 7800 9350
+Connection ~ 8200 9350
+Wire Wire Line
+	7800 9350 7400 9350
+Connection ~ 7800 9350
+Wire Wire Line
+	7400 9350 7250 9350
+Connection ~ 7400 9350
+Wire Wire Line
+	9400 9350 9000 9350
+Wire Wire Line
+	7800 9050 7900 9050
+Wire Wire Line
+	8200 9050 8300 9050
+Wire Wire Line
+	8600 9050 8700 9050
+Wire Wire Line
+	9000 9050 9100 9050
+Wire Wire Line
+	9400 9050 9500 9050
+$Comp
+L Diode:1N4148W D51
+U 1 1 6122E276
+P 9400 9200
+F 0 "D51" V 9446 9120 50  0000 R CNN
+F 1 "1N4148W" V 9355 9120 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9400 9025 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9400 9200 50  0001 C CNN
+	1    9400 9200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D50
+U 1 1 6122E27C
+P 9000 9200
+F 0 "D50" V 9046 9120 50  0000 R CNN
+F 1 "1N4148W" V 8955 9120 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9000 9025 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 9000 9200 50  0001 C CNN
+	1    9000 9200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D49
+U 1 1 6122E282
+P 8600 9200
+F 0 "D49" V 8646 9120 50  0000 R CNN
+F 1 "1N4148W" V 8555 9120 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8600 9025 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8600 9200 50  0001 C CNN
+	1    8600 9200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D48
+U 1 1 6122E288
+P 8200 9200
+F 0 "D48" V 8246 9120 50  0000 R CNN
+F 1 "1N4148W" V 8155 9120 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8200 9025 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8200 9200 50  0001 C CNN
+	1    8200 9200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D47
+U 1 1 6122E28E
+P 7800 9200
+F 0 "D47" V 7846 9120 50  0000 R CNN
+F 1 "1N4148W" V 7755 9120 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7800 9025 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7800 9200 50  0001 C CNN
+	1    7800 9200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 9050 7500 9050
+$Comp
+L Diode:1N4148W D46
+U 1 1 6122E295
+P 7400 9200
+F 0 "D46" V 7446 9120 50  0000 R CNN
+F 1 "1N4148W" V 7355 9120 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7400 9025 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7400 9200 50  0001 C CNN
+	1    7400 9200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX51
+U 1 1 6122E29B
+P 9550 8900
+F 0 "MX51" H 9583 9123 60  0000 C CNN
+F 1 "K3_11" H 9583 9049 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8925 8875 60  0001 C CNN
+F 3 "" H 8925 8875 60  0001 C CNN
+	1    9550 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX50
+U 1 1 6122E2A1
+P 9150 8900
+F 0 "MX50" H 9183 9123 60  0000 C CNN
+F 1 "K3_10" H 9183 9049 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8525 8875 60  0001 C CNN
+F 3 "" H 8525 8875 60  0001 C CNN
+	1    9150 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX49
+U 1 1 6122E2A7
+P 8750 8900
+F 0 "MX49" H 8783 9123 60  0000 C CNN
+F 1 "K3_9" H 8783 9049 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 8125 8875 60  0001 C CNN
+F 3 "" H 8125 8875 60  0001 C CNN
+	1    8750 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX48
+U 1 1 6122E2AD
+P 8350 8900
+F 0 "MX48" H 8383 9123 60  0000 C CNN
+F 1 "K3_8" H 8383 9049 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7725 8875 60  0001 C CNN
+F 3 "" H 7725 8875 60  0001 C CNN
+	1    8350 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX47
+U 1 1 6122E2B3
+P 7950 8900
+F 0 "MX47" H 7983 9123 60  0000 C CNN
+F 1 "K3_7" H 7983 9049 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7325 8875 60  0001 C CNN
+F 3 "" H 7325 8875 60  0001 C CNN
+	1    7950 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX46
+U 1 1 6122E2B9
+P 7550 8900
+F 0 "MX46" H 7583 9123 60  0000 C CNN
+F 1 "K3_6" H 7583 9049 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 6925 8875 60  0001 C CNN
+F 3 "" H 6925 8875 60  0001 C CNN
+	1    7550 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 10150 7800 10150
+Wire Wire Line
+	7800 10150 7400 10150
+Connection ~ 7800 10150
+Wire Wire Line
+	7400 10150 7250 10150
+Connection ~ 7400 10150
+Wire Wire Line
+	7800 9850 7900 9850
+Wire Wire Line
+	8200 9850 8300 9850
+$Comp
+L Diode:1N4148W D54
+U 1 1 6122E2C6
+P 8200 10000
+F 0 "D54" V 8246 9920 50  0000 R CNN
+F 1 "1N4148W" V 8155 9920 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 8200 9825 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 8200 10000 50  0001 C CNN
+	1    8200 10000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148W D53
+U 1 1 6122E2CC
+P 7800 10000
+F 0 "D53" V 7846 9920 50  0000 R CNN
+F 1 "1N4148W" V 7755 9920 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7800 9825 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7800 10000 50  0001 C CNN
+	1    7800 10000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 9850 7500 9850
+$Comp
+L Diode:1N4148W D52
+U 1 1 6122E2D3
+P 7400 10000
+F 0 "D52" V 7446 9920 50  0000 R CNN
+F 1 "1N4148W" V 7355 9920 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 7400 9825 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85748/1n4148w.pdf" H 7400 10000 50  0001 C CNN
+	1    7400 10000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX54
+U 1 1 6122E2D9
+P 8350 9700
+F 0 "MX54" H 8383 9923 60  0000 C CNN
+F 1 "K4_8" H 8383 9849 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7725 9675 60  0001 C CNN
+F 3 "" H 7725 9675 60  0001 C CNN
+	1    8350 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX53
+U 1 1 6122E2DF
+P 7950 9700
+F 0 "MX53" H 7983 9923 60  0000 C CNN
+F 1 "K4_7" H 7983 9849 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7325 9675 60  0001 C CNN
+F 3 "" H 7325 9675 60  0001 C CNN
+	1    7950 9700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX52
+U 1 1 6122E2E5
+P 7550 9700
+F 0 "MX52" H 7583 9923 60  0000 C CNN
+F 1 "K4_6" H 7583 9849 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 6925 9675 60  0001 C CNN
+F 3 "" H 6925 9675 60  0001 C CNN
+	1    7550 9700
+	1    0    0    -1  
+$EndComp
+Text Notes 7450 5850 0    50   ~ 0
+Right Side Matrix\n
+Wire Wire Line
+	7700 6450 7700 7250
+Connection ~ 7700 7250
+Wire Wire Line
+	7700 7250 7700 8050
+Connection ~ 7700 8050
+Wire Wire Line
+	7700 8050 7700 8850
+Text GLabel 7250 6950 0    50   Input ~ 0
+Row0-R
+Text GLabel 7250 7750 0    50   Input ~ 0
+Row1-R
+Text GLabel 7250 8550 0    50   Input ~ 0
+Row2-R
+Text GLabel 7250 9350 0    50   Input ~ 0
+Row3-R
+Text GLabel 7250 10150 0    50   Input ~ 0
+Row4-R
+Text GLabel 7700 6200 1    50   Input ~ 0
+Col6
+Wire Wire Line
+	7700 6200 7700 6450
+Connection ~ 7700 6450
+Wire Wire Line
+	8100 6450 8100 7250
+Connection ~ 8100 7250
+Wire Wire Line
+	8100 7250 8100 8050
+Connection ~ 8100 8050
+Wire Wire Line
+	8100 8050 8100 8850
+Text GLabel 8100 6200 1    50   Input ~ 0
+Col7
+Wire Wire Line
+	8100 6200 8100 6450
+Connection ~ 8100 6450
+Wire Wire Line
+	8500 6450 8500 7250
+Connection ~ 8500 7250
+Wire Wire Line
+	8500 7250 8500 8050
+Connection ~ 8500 8050
+Wire Wire Line
+	8500 8050 8500 8850
+Text GLabel 8500 6200 1    50   Input ~ 0
+Col8
+Wire Wire Line
+	8500 6200 8500 6450
+Connection ~ 8500 6450
+Wire Wire Line
+	8900 6450 8900 7250
+Connection ~ 8900 7250
+Wire Wire Line
+	8900 7250 8900 8050
+Connection ~ 8900 8050
+Wire Wire Line
+	8900 8050 8900 8850
+Text GLabel 8900 6200 1    50   Input ~ 0
+Col9
+Wire Wire Line
+	8900 6200 8900 6450
+Connection ~ 8900 6450
+Wire Wire Line
+	9300 6450 9300 7250
+Connection ~ 9300 7250
+Wire Wire Line
+	9300 7250 9300 8050
+Connection ~ 9300 8050
+Wire Wire Line
+	9300 8050 9300 8850
+Text GLabel 9300 6200 1    50   Input ~ 0
+Col10
+Wire Wire Line
+	9300 6200 9300 6450
+Connection ~ 9300 6450
+Wire Wire Line
+	9700 6450 9700 7250
+Connection ~ 9700 7250
+Wire Wire Line
+	9700 7250 9700 8050
+Connection ~ 9700 8050
+Wire Wire Line
+	9700 8050 9700 8850
+Text GLabel 9700 6200 1    50   Input ~ 0
+Col11
+Wire Wire Line
+	9700 6200 9700 6450
+Connection ~ 9700 6450
+Wire Wire Line
+	7700 8850 7700 9650
+Connection ~ 7700 8850
+Wire Wire Line
+	8100 8850 8100 9650
+Connection ~ 8100 8850
+Wire Wire Line
+	8500 8850 8500 9650
+Connection ~ 8500 8850
+Text GLabel 3650 6900 2    50   Input ~ 0
+Row0-R
+Text GLabel 3650 7000 2    50   Input ~ 0
+Row1-R
+Text GLabel 3650 7100 2    50   Input ~ 0
+Row2-R
+Text GLabel 3650 7200 2    50   Input ~ 0
+Row3-R
+Text GLabel 3650 7300 2    50   Input ~ 0
+Row4-R
+Text GLabel 3650 7800 2    50   Input ~ 0
+Col6
+Text GLabel 3650 7900 2    50   Input ~ 0
+Col7
+Text GLabel 3650 8000 2    50   Input ~ 0
+Col8
+Text GLabel 3650 8100 2    50   Input ~ 0
+Col9
+Text GLabel 3650 8200 2    50   Input ~ 0
+Col10
+Text GLabel 3650 8300 2    50   Input ~ 0
+Col11
+Wire Wire Line
+	2950 8800 2250 8800
+Connection ~ 2250 8800
+Wire Wire Line
+	2250 8800 2250 8850
+Text GLabel 2250 6900 0    50   Input ~ 0
+SDA-R
+Text GLabel 2250 7000 0    50   Input ~ 0
+SCL-R
+Text GLabel 3700 3050 2    50   Input ~ 0
+SDA-L
+Text GLabel 3700 2950 2    50   Input ~ 0
+SCL-L
+Text Notes 4350 6300 0    50   ~ 0
+Interconnect port Right
+Text Notes 4900 4100 0    50   ~ 0
+Interconnect Port Left
+Wire Wire Line
+	2250 8300 2250 8400
+Connection ~ 2250 8400
+Wire Wire Line
+	2250 8500 2250 8800
+Wire Wire Line
+	2250 8400 2250 8500
+Connection ~ 2250 8500
+$Comp
+L Interface_Expansion:MCP23017_SO U2
+U 1 1 611E68FD
+P 2950 7700
+F 0 "U2" H 2950 8981 50  0000 C CNN
+F 1 "MCP23017_SO" H 2950 8890 50  0000 C CNN
+F 2 "Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm" H 3150 6700 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 3150 6600 50  0001 L CNN
+	1    2950 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0120
+U 1 1 617AB6E3
+P 2400 6600
+F 0 "#PWR0120" H 2400 6450 50  0001 C CNN
+F 1 "VBUS" H 2415 6773 50  0000 C CNN
+F 2 "" H 2400 6600 50  0001 C CNN
+F 3 "" H 2400 6600 50  0001 C CNN
+	1    2400 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 6600 2950 6600
+$Comp
+L power:VBUS #PWR0121
+U 1 1 617C0B91
+P 2050 7800
+F 0 "#PWR0121" H 2050 7650 50  0001 C CNN
+F 1 "VBUS" H 2065 7973 50  0000 C CNN
+F 2 "" H 2050 7800 50  0001 C CNN
+F 3 "" H 2050 7800 50  0001 C CNN
+	1    2050 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 7800 2250 7800
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 61B4D89A
+P 5100 1650
+F 0 "J1" H 5207 2517 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 5207 2426 50  0000 C CNN
+F 2 "Type-C:USB_C_GCT_USB4085" H 5250 1650 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5250 1650 50  0001 C CNN
+	1    5100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 61BE2113
+P 6250 1050
+F 0 "F1" V 6045 1050 50  0000 C CNN
+F 1 "500mA" V 6136 1050 50  0000 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6300 850 50  0001 L CNN
+F 3 "~" H 6250 1050 50  0001 C CNN
+	1    6250 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0123
+U 1 1 61BE2119
+P 6650 1050
+F 0 "#PWR0123" H 6650 900 50  0001 C CNN
+F 1 "+5V" H 6665 1223 50  0000 C CNN
+F 2 "" H 6650 1050 50  0001 C CNN
+F 3 "" H 6650 1050 50  0001 C CNN
+	1    6650 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0124
+U 1 1 61BE2121
+P 5900 950
+F 0 "#PWR0124" H 5900 800 50  0001 C CNN
+F 1 "VCC" H 5915 1123 50  0000 C CNN
+F 2 "" H 5900 950 50  0001 C CNN
+F 3 "" H 5900 950 50  0001 C CNN
+	1    5900 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 950  5900 1050
+Wire Wire Line
+	5900 1050 6150 1050
+Wire Wire Line
+	5900 1050 5700 1050
+Connection ~ 5900 1050
+$Comp
+L power:GND #PWR0125
+U 1 1 61C6BDF7
+P 5700 2550
+F 0 "#PWR0125" H 5700 2300 50  0001 C CNN
+F 1 "GND" H 5705 2377 50  0000 C CNN
+F 2 "" H 5700 2550 50  0001 C CNN
+F 3 "" H 5700 2550 50  0001 C CNN
+	1    5700 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 1050 6650 1050
+Wire Wire Line
+	4800 2550 5100 2550
+Connection ~ 5100 2550
+Wire Wire Line
+	5100 2550 5700 2550
+$Comp
+L Device:R_Small R2
+U 1 1 61EB181B
+P 5800 1250
+F 0 "R2" V 5604 1250 50  0000 C CNN
+F 1 "5.1K" V 5695 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5800 1250 50  0001 C CNN
+F 3 "~" H 5800 1250 50  0001 C CNN
+	1    5800 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 61EB60EB
+P 6050 1350
+F 0 "R3" V 6246 1350 50  0000 C CNN
+F 1 "5.1K" V 6155 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6050 1350 50  0001 C CNN
+F 3 "~" H 6050 1350 50  0001 C CNN
+	1    6050 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 1350 5950 1350
+$Comp
+L power:GND #PWR0126
+U 1 1 61ECB9DA
+P 6350 1350
+F 0 "#PWR0126" H 6350 1100 50  0001 C CNN
+F 1 "GND" H 6355 1177 50  0000 C CNN
+F 2 "" H 6350 1350 50  0001 C CNN
+F 3 "" H 6350 1350 50  0001 C CNN
+	1    6350 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1350 6350 1350
+Wire Wire Line
+	5900 1250 6350 1250
+Wire Wire Line
+	6350 1250 6350 1350
+Connection ~ 6350 1350
+$Comp
+L Device:R_Small R4
+U 1 1 61EF46E6
+P 5900 1650
+F 0 "R4" V 6096 1650 50  0000 C CNN
+F 1 "22" V 6005 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5900 1650 50  0001 C CNN
+F 3 "~" H 5900 1650 50  0001 C CNN
+	1    5900 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 1650 5750 1650
+Wire Wire Line
+	5700 1550 5750 1550
+Wire Wire Line
+	5750 1550 5750 1650
+Connection ~ 5750 1650
+Wire Wire Line
+	5750 1650 5800 1650
+Text GLabel 6100 1650 2    50   Input ~ 0
+D-
+Wire Wire Line
+	6000 1650 6100 1650
+$Comp
+L Device:R_Small R5
+U 1 1 61F3054F
+P 5900 1850
+F 0 "R5" V 6096 1850 50  0000 C CNN
+F 1 "22" V 6005 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5900 1850 50  0001 C CNN
+F 3 "~" H 5900 1850 50  0001 C CNN
+	1    5900 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5700 1850 5750 1850
+Wire Wire Line
+	5700 1750 5750 1750
+Wire Wire Line
+	5750 1750 5750 1850
+Connection ~ 5750 1850
+Wire Wire Line
+	5750 1850 5800 1850
+Text GLabel 6100 1850 2    50   Input ~ 0
+D+
+Wire Wire Line
+	6000 1850 6100 1850
+NoConn ~ 5700 2150
+NoConn ~ 5700 2250
+Wire Wire Line
+	1050 2850 2500 2850
+Wire Wire Line
+	1050 2750 2500 2750
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 617813AB
+P 1350 5900
+F 0 "#FLG0101" H 1350 5975 50  0001 C CNN
+F 1 "PWR_FLAG" V 1350 6027 50  0000 L CNN
+F 2 "" H 1350 5900 50  0001 C CNN
+F 3 "~" H 1350 5900 50  0001 C CNN
+	1    1350 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 61781F62
+P 1550 5900
+F 0 "#PWR0111" H 1550 5650 50  0001 C CNN
+F 1 "GND" V 1550 5700 50  0000 C CNN
+F 2 "" H 1550 5900 50  0001 C CNN
+F 3 "" H 1550 5900 50  0001 C CNN
+	1    1550 5900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1350 5900 1550 5900
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6179D4FD
+P 1350 5450
+F 0 "#FLG0102" H 1350 5525 50  0001 C CNN
+F 1 "PWR_FLAG" V 1350 5577 50  0000 L CNN
+F 2 "" H 1350 5450 50  0001 C CNN
+F 3 "~" H 1350 5450 50  0001 C CNN
+	1    1350 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1350 5450 1550 5450
+NoConn ~ 2500 2350
+NoConn ~ 3700 2450
+NoConn ~ 3700 2650
+NoConn ~ 3700 2750
+NoConn ~ 3700 3150
+NoConn ~ 3700 3250
+NoConn ~ 3700 3350
+NoConn ~ 3700 3450
+NoConn ~ 3700 3950
+NoConn ~ 3700 4450
+NoConn ~ 3700 4550
+NoConn ~ 3700 4650
+NoConn ~ 3650 7400
+NoConn ~ 3650 7500
+NoConn ~ 3650 7600
+NoConn ~ 3650 8400
+NoConn ~ 3650 8500
+NoConn ~ 2250 7500
+NoConn ~ 2250 7600
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 61975930
+P 1350 5300
+F 0 "#FLG0103" H 1350 5375 50  0001 C CNN
+F 1 "PWR_FLAG" V 1350 5427 50  0000 L CNN
+F 2 "" H 1350 5300 50  0001 C CNN
+F 3 "~" H 1350 5300 50  0001 C CNN
+	1    1350 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0113
+U 1 1 6197725E
+P 1550 5300
+F 0 "#PWR0113" H 1550 5150 50  0001 C CNN
+F 1 "+5V" V 1550 5500 50  0000 C CNN
+F 2 "" H 1550 5300 50  0001 C CNN
+F 3 "" H 1550 5300 50  0001 C CNN
+	1    1550 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 5300 1350 5300
+NoConn ~ 3700 1750
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 619BC24A
+P 1350 5600
+F 0 "#FLG0104" H 1350 5675 50  0001 C CNN
+F 1 "PWR_FLAG" V 1350 5727 50  0000 L CNN
+F 2 "" H 1350 5600 50  0001 C CNN
+F 3 "~" H 1350 5600 50  0001 C CNN
+	1    1350 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0115
+U 1 1 619BCAA9
+P 1550 5600
+F 0 "#PWR0115" H 1550 5450 50  0001 C CNN
+F 1 "VCC" V 1550 5800 50  0000 C CNN
+F 2 "" H 1550 5600 50  0001 C CNN
+F 3 "" H 1550 5600 50  0001 C CNN
+	1    1550 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1550 5600 1350 5600
+$Comp
+L power:VBUS #PWR0112
+U 1 1 617B19F5
+P 1550 5450
+F 0 "#PWR0112" H 1550 5300 50  0001 C CNN
+F 1 "VBUS" V 1550 5650 50  0000 C CNN
+F 2 "" H 1550 5450 50  0001 C CNN
+F 3 "" H 1550 5450 50  0001 C CNN
+	1    1550 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 61AF2E3C
+P 1350 6050
+F 0 "#FLG0105" H 1350 6125 50  0001 C CNN
+F 1 "PWR_FLAG" V 1350 6177 50  0000 L CNN
+F 2 "" H 1350 6050 50  0001 C CNN
+F 3 "~" H 1350 6050 50  0001 C CNN
+	1    1350 6050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VSS #PWR0116
+U 1 1 61AF36DB
+P 1550 6050
+F 0 "#PWR0116" H 1550 5900 50  0001 C CNN
+F 1 "VSS" V 1565 6178 50  0000 L CNN
+F 2 "" H 1550 6050 50  0001 C CNN
+F 3 "" H 1550 6050 50  0001 C CNN
+	1    1550 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 6050 1550 6050
+$Comp
+L power:VSS #PWR0118
+U 1 1 61B1EC51
+P 2250 8850
+F 0 "#PWR0118" H 2250 8700 50  0001 C CNN
+F 1 "VSS" H 2265 9023 50  0000 C CNN
+F 2 "" H 2250 8850 50  0001 C CNN
+F 3 "" H 2250 8850 50  0001 C CNN
+	1    2250 8850
+	-1   0    0    1   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX1
+U 1 1 60F7F26B
+P 7700 1450
+F 0 "MX1" H 7733 1673 60  0000 C CNN
+F 1 "K0_0" H 7733 1599 20  0000 C CNN
+F 2 "Keebio-Parts:MX-Alps-Choc-1U-NoLED" H 7075 1425 60  0001 C CNN
+F 3 "" H 7075 1425 60  0001 C CNN
+	1    7700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J2
+U 1 1 61343490
+P 5250 5050
+F 0 "J2" H 5357 5917 50  0000 C CNN
+F 1 "I2C-L" H 5357 5826 50  0000 C CNN
+F 2 "Type-C:USB_C_GCT_USB4085" H 5400 5050 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5400 5050 50  0001 C CNN
+	1    5250 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 5950 5250 5950
+$Comp
+L power:GND #PWR0114
+U 1 1 613A2B0B
+P 6000 5950
+F 0 "#PWR0114" H 6000 5700 50  0001 C CNN
+F 1 "GND" H 6005 5777 50  0000 C CNN
+F 2 "" H 6000 5950 50  0001 C CNN
+F 3 "" H 6000 5950 50  0001 C CNN
+	1    6000 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5950 6000 5950
+Wire Wire Line
+	6000 5950 6000 6000
+Connection ~ 5250 5950
+Connection ~ 6000 5950
+$Comp
+L power:+5V #PWR0117
+U 1 1 613C3F89
+P 6100 4450
+F 0 "#PWR0117" H 6100 4300 50  0001 C CNN
+F 1 "+5V" H 6115 4623 50  0000 C CNN
+F 2 "" H 6100 4450 50  0001 C CNN
+F 3 "" H 6100 4450 50  0001 C CNN
+	1    6100 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 4450 6100 4450
+Wire Wire Line
+	5850 4950 5950 4950
+Wire Wire Line
+	5950 4950 5950 5050
+Text GLabel 6150 5050 2    50   Input ~ 0
+SCL-L
+Wire Wire Line
+	5850 5050 5950 5050
+Connection ~ 5950 5050
+Wire Wire Line
+	5950 5050 6150 5050
+Wire Wire Line
+	5850 5150 5950 5150
+Wire Wire Line
+	5950 5150 5950 5250
+Wire Wire Line
+	5950 5250 5850 5250
+Text GLabel 6150 5250 2    50   Input ~ 0
+SDA-L
+Wire Wire Line
+	5950 5250 6150 5250
+Connection ~ 5950 5250
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J3
+U 1 1 614F9790
+P 4800 7350
+F 0 "J3" H 4907 8217 50  0000 C CNN
+F 1 "I2C-R" H 4907 8126 50  0000 C CNN
+F 2 "Type-C:USB_C_GCT_USB4085" H 4950 7350 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4950 7350 50  0001 C CNN
+	1    4800 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 8250 4800 8250
+Connection ~ 4800 8250
+Wire Wire Line
+	4800 8250 5450 8250
+$Comp
+L power:VSS #PWR0119
+U 1 1 615196B2
+P 5450 8250
+F 0 "#PWR0119" H 5450 8100 50  0001 C CNN
+F 1 "VSS" H 5465 8423 50  0000 C CNN
+F 2 "" H 5450 8250 50  0001 C CNN
+F 3 "" H 5450 8250 50  0001 C CNN
+	1    5450 8250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 7350 5600 7350
+Wire Wire Line
+	5600 7350 5600 7250
+Wire Wire Line
+	5600 7250 5400 7250
+Wire Wire Line
+	5400 7450 5600 7450
+Wire Wire Line
+	5600 7450 5600 7550
+Wire Wire Line
+	5600 7550 5400 7550
+$Comp
+L power:VBUS #PWR0122
+U 1 1 6154D1E6
+P 5600 6650
+F 0 "#PWR0122" H 5600 6500 50  0001 C CNN
+F 1 "VBUS" H 5615 6823 50  0000 C CNN
+F 2 "" H 5600 6650 50  0001 C CNN
+F 3 "" H 5600 6650 50  0001 C CNN
+	1    5600 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 6750 5600 6750
+Wire Wire Line
+	5600 6750 5600 6650
+Wire Wire Line
+	5600 7050 5700 7050
+Wire Wire Line
+	6200 7050 6300 7050
+Connection ~ 6200 7050
+Wire Wire Line
+	5950 7050 6200 7050
+$Comp
+L Device:R_Small R6
+U 1 1 615E83A9
+P 5850 7050
+F 0 "R6" V 5654 7050 50  0000 C CNN
+F 1 "4.7k" V 5745 7050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5850 7050 50  0001 C CNN
+F 3 "~" H 5850 7050 50  0001 C CNN
+	1    5850 7050
+	0    1    1    0   
+$EndComp
+Text GLabel 6300 7050 2    50   Input ~ 0
+SCL-R
+Wire Wire Line
+	5600 7250 6200 7250
+Wire Wire Line
+	6200 7050 6200 7250
+Connection ~ 5600 7250
+Wire Wire Line
+	5600 6750 5600 7050
+Connection ~ 5600 6750
+Wire Wire Line
+	6100 7450 6200 7450
+Connection ~ 6100 7450
+Wire Wire Line
+	6100 7550 6100 7450
+Wire Wire Line
+	6050 7450 6100 7450
+$Comp
+L Device:R_Small R7
+U 1 1 61698CA9
+P 5950 7450
+F 0 "R7" V 5754 7450 50  0000 C CNN
+F 1 "4.7k" V 5845 7450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5950 7450 50  0001 C CNN
+F 3 "~" H 5950 7450 50  0001 C CNN
+	1    5950 7450
+	0    1    1    0   
+$EndComp
+Text GLabel 6200 7450 2    50   Input ~ 0
+SDA-R
+Wire Wire Line
+	5600 7550 6100 7550
+Connection ~ 5600 7550
+Wire Wire Line
+	5700 7050 5700 7450
+Wire Wire Line
+	5700 7450 5850 7450
+Connection ~ 5700 7050
+Wire Wire Line
+	5700 7050 5750 7050
+NoConn ~ 5850 5550
+NoConn ~ 5850 5650
+NoConn ~ 5850 4650
+NoConn ~ 5850 4750
+NoConn ~ 5400 6950
+NoConn ~ 5400 7050
+NoConn ~ 5400 7850
+NoConn ~ 5400 7950
+$EndSCHEMATC
