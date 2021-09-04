@@ -1,7 +1,7 @@
 (fp_lib_table
-  (lib (name random-keyboard-parts)(type KiCad)(uri /home/mark/code/tryptris/sym/random-keyboard-parts.pretty)(options "")(descr ""))
-  (lib (name Type-C)(type KiCad)(uri /home/mark/code/tryptris/sym/Type-C.pretty)(options "")(descr ""))
-  (lib (name Panelization)(type KiCad)(uri /home/mark/code/tryptris/sym/Panelization.pretty)(options "")(descr ""))
-  (lib (name v01)(type KiCad)(uri /home/mark/code/tryptris/v01/sym)(options "")(descr ""))
-  (lib (name Keebio-Parts)(type KiCad)(uri /home/mark/code/tryptris/sym/Keebio-Parts.pretty)(options "")(descr ""))
+  (lib (name random-keyboard-parts)(type KiCad)(uri ${KIPRJMOD}/sym/random-keyboard-parts.pretty)(options "")(descr ""))
+  (lib (name Type-C)(type KiCad)(uri ${KIPRJMOD}/sym/Type-C.pretty)(options "")(descr ""))
+  (lib (name Panelization)(type KiCad)(uri ${KIPRJMOD}/sym/Panelization.pretty)(options "")(descr ""))
+  (lib (name v01)(type KiCad)(uri ${KIPRJMOD}/v01/sym)(options "")(descr ""))
+  (lib (name Keebio-Parts)(type KiCad)(uri ${KIPRJMOD}/sym/Keebio-Parts.pretty)(options "")(descr ""))
 )
