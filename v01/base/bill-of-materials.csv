@@ -1,4 +1,19 @@
-Part number, Usage, Count
-MCP23017-E/SO, IO Expander, 1
-ATMEGA32U4-AU, MCU, 1
-1N4148WS SOD123, Switch Diodes, 56
+Id,Designator,Package,Quantity,Designation,Supplier and ref
+1,"R7,R6",R_0805_2012Metric,2,4.7k,
+2,F1,Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder,1,500mA,
+3,D1-D54,D_SOD-123,54,1N4148W,
+4,Y1,Crystal_SMD_3225-4Pin_3.2x2.5mm,1,16Mhz,
+5,U2,SOIC-28W_7.5x17.9mm_P1.27mm,1,MCP23017_SO,
+6,U1,TQFP-44_10x10mm_P0.8mm,1,ATmega32U4-AU,
+7,"R8,R1",R_0805_2012Metric,2,10k,
+8,"R5,R4",R_0805_2012Metric,2,22,
+9,"R3,R2",R_0805_2012Metric,2,5.1K,
+10,C7,C_0805_2012Metric,1,10uF,
+11,"C6,C5,C4",C_0805_2012Metric,3,0.1uF,
+12,C3,C_0805_2012Metric,1,1uF,
+13,"C2,C1",C_0805_2012Metric,2,22pF,
+14,MX47,MX-Alps-Choc-1U-NoLED,1,K3_7,
+15,J3,USB_C_GCT_USB4085,1,I2C-R,
+16,J2,USB_C_GCT_USB4085,1,I2C-L,
+77,J1,USB_C_GCT_USB4085,1,USB_C_Receptacle_USB2.0,
+24,SW1,SW_SPST_TL3342,1,Reset,
