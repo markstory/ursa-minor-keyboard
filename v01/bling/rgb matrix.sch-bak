@@ -341,9 +341,9 @@ Wire Wire Line
 	1950 1550 1800 1550
 Connection ~ 1950 1550
 Text GLabel 12300 2250 0    50   Input ~ 0
-SDA-L
+SDA-R
 Text GLabel 12300 2350 0    50   Input ~ 0
-SCL-L
+SCL-R
 $Comp
 L Device:R_Small R9
 U 1 1 61AD747A
