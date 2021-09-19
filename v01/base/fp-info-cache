@@ -1,4 +1,4 @@
-306039395626293
+307670301685293
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -84307,6 +84307,13 @@ breakaway-mousebites
 0
 0
 0
+v01
+RGB_3528_Blue_Notch-MX
+RGB LED 3.2x2.7mm http://www.avagotech.com/docs/AV02-0610EN
+LED 3227
+0
+4
+4
 v01
 constellation-left
 

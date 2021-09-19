@@ -2619,4 +2619,12 @@ Wire Wire Line
 Connection ~ 5700 7050
 Wire Wire Line
 	5700 7050 5750 7050
+NoConn ~ 5850 5550
+NoConn ~ 5850 5650
+NoConn ~ 5850 4650
+NoConn ~ 5850 4750
+NoConn ~ 5400 6950
+NoConn ~ 5400 7050
+NoConn ~ 5400 7850
+NoConn ~ 5400 7950
 $EndSCHEMATC

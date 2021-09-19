@@ -2121,7 +2121,7 @@ U 1 1 61B4D89A
 P 5100 1650
 F 0 "J1" H 5207 2517 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 5207 2426 50  0000 C CNN
-F 2 "Type-C:USB_C_GCT_USB4085" H 5250 1650 50  0001 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 5250 1650 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5250 1650 50  0001 C CNN
 	1    5100 1650
 	1    0    0    -1  
@@ -2448,7 +2448,7 @@ U 1 1 61343490
 P 5250 5050
 F 0 "J2" H 5357 5917 50  0000 C CNN
 F 1 "I2C-L" H 5357 5826 50  0000 C CNN
-F 2 "Type-C:USB_C_GCT_USB4085" H 5400 5050 50  0001 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 5400 5050 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 5400 5050 50  0001 C CNN
 	1    5250 5050
 	1    0    0    -1  
@@ -2513,7 +2513,7 @@ U 1 1 614F9790
 P 4800 7350
 F 0 "J3" H 4907 8217 50  0000 C CNN
 F 1 "I2C-R" H 4907 8126 50  0000 C CNN
-F 2 "Type-C:USB_C_GCT_USB4085" H 4950 7350 50  0001 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 4950 7350 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4950 7350 50  0001 C CNN
 	1    4800 7350
 	1    0    0    -1  
