@@ -2062,9 +2062,9 @@ Text GLabel 2250 6900 0    50   Input ~ 0
 SDA-R
 Text GLabel 2250 7000 0    50   Input ~ 0
 SCL-R
-Text GLabel 3700 3050 2    50   Input ~ 0
+Text GLabel 4550 3050 2    50   Input ~ 0
 SDA-L
-Text GLabel 3700 2950 2    50   Input ~ 0
+Text GLabel 4550 2950 2    50   Input ~ 0
 SCL-L
 Text Notes 4350 6300 0    50   ~ 0
 Interconnect port Right
@@ -2561,64 +2561,21 @@ Wire Wire Line
 	5400 6750 5600 6750
 Wire Wire Line
 	5600 6750 5600 6650
-Wire Wire Line
-	5600 7050 5700 7050
-Wire Wire Line
-	6200 7050 6300 7050
-Connection ~ 6200 7050
-Wire Wire Line
-	5950 7050 6200 7050
 $Comp
 L Device:R_Small R6
 U 1 1 615E83A9
-P 5850 7050
-F 0 "R6" V 5654 7050 50  0000 C CNN
-F 1 "4.7k" V 5745 7050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5850 7050 50  0001 C CNN
-F 3 "~" H 5850 7050 50  0001 C CNN
-	1    5850 7050
-	0    1    1    0   
+P 4100 2800
+F 0 "R6" V 3904 2800 50  0000 C CNN
+F 1 "4.7k" V 3995 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4100 2800 50  0001 C CNN
+F 3 "~" H 4100 2800 50  0001 C CNN
+	1    4100 2800
+	-1   0    0    1   
 $EndComp
-Text GLabel 6300 7050 2    50   Input ~ 0
+Text GLabel 6000 7350 2    50   Input ~ 0
 SCL-R
-Wire Wire Line
-	5600 7250 6200 7250
-Wire Wire Line
-	6200 7050 6200 7250
-Connection ~ 5600 7250
-Wire Wire Line
-	5600 6750 5600 7050
-Connection ~ 5600 6750
-Wire Wire Line
-	6100 7450 6200 7450
-Connection ~ 6100 7450
-Wire Wire Line
-	6100 7550 6100 7450
-Wire Wire Line
-	6050 7450 6100 7450
-$Comp
-L Device:R_Small R7
-U 1 1 61698CA9
-P 5950 7450
-F 0 "R7" V 5754 7450 50  0000 C CNN
-F 1 "4.7k" V 5845 7450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5950 7450 50  0001 C CNN
-F 3 "~" H 5950 7450 50  0001 C CNN
-	1    5950 7450
-	0    1    1    0   
-$EndComp
-Text GLabel 6200 7450 2    50   Input ~ 0
+Text GLabel 6000 7550 2    50   Input ~ 0
 SDA-R
-Wire Wire Line
-	5600 7550 6100 7550
-Connection ~ 5600 7550
-Wire Wire Line
-	5700 7050 5700 7450
-Wire Wire Line
-	5700 7450 5850 7450
-Connection ~ 5700 7050
-Wire Wire Line
-	5700 7050 5750 7050
 NoConn ~ 5850 5550
 NoConn ~ 5850 5650
 NoConn ~ 5850 4650
@@ -2633,4 +2590,57 @@ U 612B701F
 F0 "rgbmatrix" 50
 F1 "rgb matrix.sch" 50
 $EndSheet
+Wire Wire Line
+	5600 7350 6000 7350
+Connection ~ 5600 7350
+Wire Wire Line
+	5600 7550 6000 7550
+Connection ~ 5600 7550
+$Comp
+L Device:R_Small R7
+U 1 1 61698CA9
+P 4000 2800
+F 0 "R7" V 3804 2800 50  0000 C CNN
+F 1 "4.7k" V 3895 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4000 2800 50  0001 C CNN
+F 3 "~" H 4000 2800 50  0001 C CNN
+	1    4000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0150
+U 1 1 61876A22
+P 4250 2550
+F 0 "#PWR0150" H 4250 2400 50  0001 C CNN
+F 1 "+5V" H 4265 2723 50  0000 C CNN
+F 2 "" H 4250 2550 50  0001 C CNN
+F 3 "" H 4250 2550 50  0001 C CNN
+	1    4250 2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2550 4250 2650
+Wire Wire Line
+	4250 2650 4100 2650
+Wire Wire Line
+	4000 2650 4000 2700
+Wire Wire Line
+	4100 2650 4100 2700
+Connection ~ 4100 2650
+Wire Wire Line
+	4100 2650 4000 2650
+Wire Wire Line
+	3700 2950 4000 2950
+Wire Wire Line
+	4000 2900 4000 2950
+Connection ~ 4000 2950
+Wire Wire Line
+	4000 2950 4550 2950
+Wire Wire Line
+	3700 3050 4100 3050
+Wire Wire Line
+	4100 2900 4100 3050
+Connection ~ 4100 3050
+Wire Wire Line
+	4100 3050 4550 3050
 $EndSCHEMATC
