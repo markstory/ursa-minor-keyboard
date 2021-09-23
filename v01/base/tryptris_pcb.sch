@@ -2062,9 +2062,9 @@ Text GLabel 2250 6900 0    50   Input ~ 0
 SDA-R
 Text GLabel 2250 7000 0    50   Input ~ 0
 SCL-R
-Text GLabel 3700 3050 2    50   Input ~ 0
+Text GLabel 4600 3050 2    50   Input ~ 0
 SDA-L
-Text GLabel 3700 2950 2    50   Input ~ 0
+Text GLabel 4600 2950 2    50   Input ~ 0
 SCL-L
 Text Notes 4350 6300 0    50   ~ 0
 Interconnect port Right
@@ -2561,64 +2561,38 @@ Wire Wire Line
 	5400 6750 5600 6750
 Wire Wire Line
 	5600 6750 5600 6650
-Wire Wire Line
-	5600 7050 5700 7050
-Wire Wire Line
-	6200 7050 6300 7050
-Connection ~ 6200 7050
-Wire Wire Line
-	5950 7050 6200 7050
 $Comp
 L Device:R_Small R6
 U 1 1 615E83A9
-P 5850 7050
-F 0 "R6" V 5654 7050 50  0000 C CNN
-F 1 "4.7k" V 5745 7050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5850 7050 50  0001 C CNN
-F 3 "~" H 5850 7050 50  0001 C CNN
-	1    5850 7050
-	0    1    1    0   
+P 4250 2700
+F 0 "R6" V 4054 2700 50  0000 C CNN
+F 1 "4.7k" V 4145 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4250 2700 50  0001 C CNN
+F 3 "~" H 4250 2700 50  0001 C CNN
+	1    4250 2700
+	-1   0    0    1   
 $EndComp
-Text GLabel 6300 7050 2    50   Input ~ 0
+Text GLabel 6100 7250 2    50   Input ~ 0
 SCL-R
 Wire Wire Line
 	5600 7250 6200 7250
-Wire Wire Line
-	6200 7050 6200 7250
 Connection ~ 5600 7250
-Wire Wire Line
-	5600 6750 5600 7050
-Connection ~ 5600 6750
-Wire Wire Line
-	6100 7450 6200 7450
-Connection ~ 6100 7450
-Wire Wire Line
-	6100 7550 6100 7450
-Wire Wire Line
-	6050 7450 6100 7450
 $Comp
 L Device:R_Small R7
 U 1 1 61698CA9
-P 5950 7450
-F 0 "R7" V 5754 7450 50  0000 C CNN
-F 1 "4.7k" V 5845 7450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 5950 7450 50  0001 C CNN
-F 3 "~" H 5950 7450 50  0001 C CNN
-	1    5950 7450
-	0    1    1    0   
+P 4150 2700
+F 0 "R7" V 3954 2700 50  0000 C CNN
+F 1 "4.7k" V 4045 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4150 2700 50  0001 C CNN
+F 3 "~" H 4150 2700 50  0001 C CNN
+	1    4150 2700
+	1    0    0    -1  
 $EndComp
-Text GLabel 6200 7450 2    50   Input ~ 0
+Text GLabel 6100 7550 2    50   Input ~ 0
 SDA-R
 Wire Wire Line
 	5600 7550 6100 7550
 Connection ~ 5600 7550
-Wire Wire Line
-	5700 7050 5700 7450
-Wire Wire Line
-	5700 7450 5850 7450
-Connection ~ 5700 7050
-Wire Wire Line
-	5700 7050 5750 7050
 NoConn ~ 5850 5550
 NoConn ~ 5850 5650
 NoConn ~ 5850 4650
@@ -2627,4 +2601,38 @@ NoConn ~ 5400 6950
 NoConn ~ 5400 7050
 NoConn ~ 5400 7850
 NoConn ~ 5400 7950
+Wire Wire Line
+	3700 2950 4250 2950
+Wire Wire Line
+	3700 3050 4150 3050
+Wire Wire Line
+	4150 2800 4150 3050
+Connection ~ 4150 3050
+Wire Wire Line
+	4150 3050 4600 3050
+Wire Wire Line
+	4250 2800 4250 2950
+Connection ~ 4250 2950
+Wire Wire Line
+	4250 2950 4600 2950
+$Comp
+L power:+5V #PWR?
+U 1 1 617063DF
+P 4250 2350
+F 0 "#PWR?" H 4250 2200 50  0001 C CNN
+F 1 "+5V" H 4265 2523 50  0000 C CNN
+F 2 "" H 4250 2350 50  0001 C CNN
+F 3 "" H 4250 2350 50  0001 C CNN
+	1    4250 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2350 4250 2500
+Wire Wire Line
+	4250 2500 4150 2500
+Wire Wire Line
+	4150 2500 4150 2600
+Connection ~ 4250 2500
+Wire Wire Line
+	4250 2500 4250 2600
 $EndSCHEMATC
