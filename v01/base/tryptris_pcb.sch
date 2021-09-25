@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U1
-U 1 1 60F2601E
-P 3100 3250
-F 0 "U1" H 3100 1361 50  0000 C CNN
-F 1 "ATmega32U4-AU" H 3100 1270 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3100 3250 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3100 3250 50  0001 C CNN
-	1    3100 3250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0101
 U 1 1 60F27C96
 P 3000 850
@@ -310,31 +299,27 @@ Wire Wire Line
 $Comp
 L Switch:SW_Push SW1
 U 1 1 60F454A1
-P 2200 1550
-F 0 "SW1" H 2200 1835 50  0000 C CNN
-F 1 "Reset" H 2200 1744 50  0000 C CNN
-F 2 "Keebio-Parts:SW_SPST_TL3342" H 2200 1750 50  0001 C CNN
-F 3 "~" H 2200 1750 50  0001 C CNN
-	1    2200 1550
+P 2200 1600
+F 0 "SW1" H 2200 1885 50  0000 C CNN
+F 1 "Reset" H 2200 1794 50  0000 C CNN
+F 2 "Keebio-Parts:SW_SPST_TL3342" H 2200 1800 50  0001 C CNN
+F 3 "~" H 2200 1800 50  0001 C CNN
+	1    2200 1600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 1550 2400 1750
-Wire Wire Line
-	2400 1750 2500 1750
 $Comp
 L power:GND #PWR0109
 U 1 1 60F49E63
-P 1900 1550
-F 0 "#PWR0109" H 1900 1300 50  0001 C CNN
-F 1 "GND" H 1905 1377 50  0000 C CNN
-F 2 "" H 1900 1550 50  0001 C CNN
-F 3 "" H 1900 1550 50  0001 C CNN
-	1    1900 1550
+P 1900 1600
+F 0 "#PWR0109" H 1900 1350 50  0001 C CNN
+F 1 "GND" H 1905 1427 50  0000 C CNN
+F 2 "" H 1900 1600 50  0001 C CNN
+F 3 "" H 1900 1600 50  0001 C CNN
+	1    1900 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 1550 2000 1550
+	1900 1600 2000 1600
 $Comp
 L Device:R_Small R1
 U 1 1 60F4BBB6
@@ -348,7 +333,6 @@ F 3 "~" H 2500 1250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2500 1750 2500 1350
-Connection ~ 2500 1750
 $Comp
 L power:+5V #PWR0110
 U 1 1 60F4CE87
@@ -2616,10 +2600,10 @@ Connection ~ 4250 2950
 Wire Wire Line
 	4250 2950 4600 2950
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0127
 U 1 1 617063DF
 P 4250 2350
-F 0 "#PWR?" H 4250 2200 50  0001 C CNN
+F 0 "#PWR0127" H 4250 2200 50  0001 C CNN
 F 1 "+5V" H 4265 2523 50  0000 C CNN
 F 2 "" H 4250 2350 50  0001 C CNN
 F 3 "" H 4250 2350 50  0001 C CNN
@@ -2635,4 +2619,78 @@ Wire Wire Line
 Connection ~ 4250 2500
 Wire Wire Line
 	4250 2500 4250 2600
+$Comp
+L Connector:AVR-ISP-6 J4
+U 1 1 617A0942
+P 1000 1200
+F 0 "J4" H 671 1296 50  0000 R CNN
+F 1 "AVR-ISP-6" H 1700 1700 50  0000 R CNN
+F 2 "random-keyboard-parts:Reset_Pretty-Mask" V 750 1250 50  0001 C CNN
+F 3 " ~" H -275 650 50  0001 C CNN
+	1    1000 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 617A5F51
+P 900 1750
+F 0 "#PWR0128" H 900 1500 50  0001 C CNN
+F 1 "GND" H 905 1577 50  0000 C CNN
+F 2 "" H 900 1750 50  0001 C CNN
+F 3 "" H 900 1750 50  0001 C CNN
+	1    900  1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1750 900  1600
+$Comp
+L power:+5V #PWR0129
+U 1 1 617BE7E7
+P 1100 700
+F 0 "#PWR0129" H 1100 550 50  0001 C CNN
+F 1 "+5V" H 1115 873 50  0000 C CNN
+F 2 "" H 1100 700 50  0001 C CNN
+F 3 "" H 1100 700 50  0001 C CNN
+	1    1100 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 700  900  700 
+Text GLabel 1550 1100 2    50   Input ~ 0
+Col1
+Wire Wire Line
+	1550 1100 1400 1100
+Text GLabel 1550 1000 2    50   Input ~ 0
+Col0
+Wire Wire Line
+	1550 1000 1400 1000
+Text GLabel 1550 1200 2    50   Input ~ 0
+Row1-L
+Wire Wire Line
+	1400 1200 1550 1200
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 60F2601E
+P 3100 3250
+F 0 "U1" H 3100 1361 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 3100 1270 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3100 3250 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 3100 3250 50  0001 C CNN
+	1    3100 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1750 2400 1750
+Wire Wire Line
+	2400 1750 2400 1600
+Connection ~ 2500 1750
+Wire Wire Line
+	2400 1600 2400 1250
+Wire Wire Line
+	2400 1250 2000 1250
+Wire Wire Line
+	2000 1250 2000 1300
+Wire Wire Line
+	2000 1300 1400 1300
+Connection ~ 2400 1600
 $EndSCHEMATC
