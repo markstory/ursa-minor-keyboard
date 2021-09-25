@@ -1186,8 +1186,6 @@ Wire Wire Line
 Connection ~ 9050 3800
 Text GLabel 3700 2350 2    50   Input ~ 0
 Row0-L
-Text GLabel 3700 2250 2    50   Input ~ 0
-Row1-L
 Text GLabel 3700 1850 2    50   Input ~ 0
 Row2-L
 Text GLabel 3700 3650 2    50   Input ~ 0
@@ -1198,8 +1196,6 @@ Text GLabel 3700 2050 2    50   Input ~ 0
 Col0
 Text GLabel 3700 1950 2    50   Input ~ 0
 Col1
-Text GLabel 3700 2150 2    50   Input ~ 0
-Col2
 Text GLabel 3700 4150 2    50   Input ~ 0
 Col3
 Text GLabel 3700 4250 2    50   Input ~ 0
@@ -2643,4 +2639,66 @@ Wire Wire Line
 Connection ~ 4100 3050
 Wire Wire Line
 	4100 3050 4550 3050
+$Comp
+L Connector:AVR-ISP-6 J4
+U 1 1 614FA457
+P 1050 1200
+F 0 "J4" H 721 1296 50  0000 R CNN
+F 1 "AVR-ISP-6" H 1900 1700 50  0000 R CNN
+F 2 "random-keyboard-parts:Reset_Pretty-Mask" V 800 1250 50  0001 C CNN
+F 3 " ~" H -225 650 50  0001 C CNN
+	1    1050 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0151
+U 1 1 614FC032
+P 1100 700
+F 0 "#PWR0151" H 1100 550 50  0001 C CNN
+F 1 "+5V" H 1115 873 50  0000 C CNN
+F 2 "" H 1100 700 50  0001 C CNN
+F 3 "" H 1100 700 50  0001 C CNN
+	1    1100 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 700  950  700 
+$Comp
+L power:GND #PWR0152
+U 1 1 615164A9
+P 950 1700
+F 0 "#PWR0152" H 950 1450 50  0001 C CNN
+F 1 "GND" H 955 1527 50  0000 C CNN
+F 2 "" H 950 1700 50  0001 C CNN
+F 3 "" H 950 1700 50  0001 C CNN
+	1    950  1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  1700 950  1600
+Text GLabel 1600 1000 2    50   Input ~ 0
+Col0
+Wire Wire Line
+	1600 1000 1450 1000
+Text GLabel 1600 1100 2    50   Input ~ 0
+Col1
+Wire Wire Line
+	1600 1100 1450 1100
+Text GLabel 1600 1200 2    50   Input ~ 0
+Row1-L
+Wire Wire Line
+	1600 1200 1450 1200
+Wire Wire Line
+	1450 1300 2000 1300
+Wire Wire Line
+	2000 1300 2000 1150
+Wire Wire Line
+	2000 1150 2400 1150
+Wire Wire Line
+	2400 1150 2400 1550
+Connection ~ 2400 1550
+Text GLabel 3700 2150 2    50   Input ~ 0
+Col2
+Text GLabel 3700 2250 2    50   Input ~ 0
+Row1-L
 $EndSCHEMATC

@@ -2613,8 +2613,6 @@ Wire Wire Line
 	13800 1500 13800 1800
 Wire Wire Line
 	13400 1800 13800 1800
-Wire Wire Line
-	13000 800  13100 800 
 Connection ~ 13100 800 
 Wire Wire Line
 	13100 800  13800 800 
