@@ -2625,7 +2625,7 @@ U 1 1 617A0942
 P 1000 1200
 F 0 "J4" H 671 1296 50  0000 R CNN
 F 1 "AVR-ISP-6" H 1700 1700 50  0000 R CNN
-F 2 "Package_DIP:DIP-6_W7.62mm_Socket" V 750 1250 50  0001 C CNN
+F 2 "random-keyboard-parts:Reset_Pretty-Mask" V 750 1250 50  0001 C CNN
 F 3 " ~" H -275 650 50  0001 C CNN
 	1    1000 1200
 	1    0    0    -1  

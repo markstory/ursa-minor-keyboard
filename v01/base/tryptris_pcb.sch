@@ -2665,7 +2665,7 @@ Col0
 Wire Wire Line
 	1550 1000 1400 1000
 Text GLabel 1550 1200 2    50   Input ~ 0
-Row1-L
+Row2-L
 Wire Wire Line
 	1400 1200 1550 1200
 $Comp
