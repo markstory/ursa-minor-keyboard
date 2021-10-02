@@ -1,4 +1,4 @@
-update=Sun 19 Sep 2021 10:59:20 AM
+update=Sat 02 Oct 2021 12:03:01 PM
 version=1
 last_client=kicad
 [general]
@@ -41,7 +41,7 @@ MinHoleToHole=0.25
 TrackWidth1=0.25
 ViaDiameter1=0.8
 ViaDrill1=0.4
-dPairWidth1=0.2
+dPairWidth1=0.25
 dPairGap1=0.25
 dPairViaGap1=0.25
 SilkLineWidth=0.12
@@ -243,7 +243,7 @@ ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
 uViaDrill=0.1
-dPairWidth=0.2
+dPairWidth=0.25
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
