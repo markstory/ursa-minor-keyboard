@@ -1,6 +1,7 @@
-# Tryptris
+# Ursa Minor Keyboard
 
-This repository contains design and schematic files for the tryptris keyboard design.
+This repository contains design and schematic files for the usra-minor keyboard design.
+
 
 ## Handwired
 
@@ -42,3 +43,10 @@ This board builds on `v01/base` and adds per-key RGB lighting via RGB matrix dri
 ### Firmware?
 
 Firmware for the PCB design is not complete.
+
+
+## FAQ
+
+**Why Ursa Minor?**
+
+The keypad shape and thumb ar remind me of [Ursa Minor](https://en.wikipedia.org/wiki/Ursa_Minor).
