@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/mark/code/tryptris/v01/base/tryptris_pcb.sch</source>
+    <source>/home/mark/code/ursaminor/v01/base/ursaminor_pcb.sch</source>
     <date>Fri 03 Sep 2021 11:46:00 PM</date>
     <tool>Eeschema 5.1.10</tool>
     <sheet number="1" name="/" tstamps="/">
@@ -10,7 +10,7 @@
         <company/>
         <rev/>
         <date/>
-        <source>tryptris_pcb.sch</source>
+        <source>ursaminor_pcb.sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
@@ -1275,7 +1275,7 @@
       <uri>/app/extensions/Library/Symbols/share/kicad/library/MCU_Microchip_ATmega.lib</uri>
     </library>
     <library logical="MX_Alps_Hybrid">
-      <uri>/home/mark/code/tryptris/sym/MX_Alps_Hybrid/Schematic Library/MX_Alps_Hybrid.lib</uri>
+      <uri>/home/mark/code/ursaminor/sym/MX_Alps_Hybrid/Schematic Library/MX_Alps_Hybrid.lib</uri>
     </library>
     <library logical="Switch">
       <uri>/app/extensions/Library/Symbols/share/kicad/library/Switch.lib</uri>
