@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 382)
+    (drawings 383)
     (tracks 4358)
     (zones 0)
     (modules 233)
@@ -17,10 +17,10 @@
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
-    (36 B.SilkS user hide)
-    (37 F.SilkS user hide)
-    (38 B.Mask user hide)
-    (39 F.Mask user hide)
+    (36 B.SilkS user)
+    (37 F.SilkS user)
+    (38 B.Mask user)
+    (39 F.Mask user)
     (40 Dwgs.User user hide)
     (41 Cmts.User user hide)
     (42 Eco1.User user hide)
@@ -7086,10 +7086,10 @@
     (pad "" np_thru_hole circle (at 2.89 -2.6 110) (size 0.65 0.65) (drill 0.65) (layers *.Cu *.Mask))
     (pad S1 thru_hole oval (at 4.32 1.05 110) (size 1 1.6) (drill oval 0.6 1.2) (layers *.Cu *.Mask)
       (net 1 GND))
-    (model ${KISYS3DMOD}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.wrl
-      (at (xyz 0 0 0))
+    (model "/home/mark/code/ursaminor/sym/Type-C.pretty/HRO  TYPE-C-31-M-12.step"
+      (offset (xyz -4.5 -3.5 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -7240,10 +7240,15 @@
     (pad "" np_thru_hole circle (at 2.89 -2.6 180) (size 0.65 0.65) (drill 0.65) (layers *.Cu *.Mask))
     (pad S1 thru_hole oval (at 4.32 1.05 180) (size 1 1.6) (drill oval 0.6 1.2) (layers *.Cu *.Mask)
       (net 1 GND))
-    (model ${KISYS3DMOD}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.wrl
+    (model "${KIPRJMOD}/sym/Type-C.pretty/HRO TYPE-C-31-M-12.step"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model "/home/mark/code/ursaminor/sym/Type-C.pretty/HRO  TYPE-C-31-M-12.step"
+      (offset (xyz -4.5 -3.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -17857,6 +17862,7 @@
     )
   )
 
+  (gr_line (start 145.258596 42.35) (end 147.25 42.35) (layer Edge.Cuts) (width 0.05) (tstamp 617F1CE5))
   (gr_line (start 181.2044 89.75) (end 179.2232 89.75) (layer Edge.Cuts) (width 0.05) (tstamp 617D304A))
   (gr_line (start 179.2232 84.65) (end 181.2 84.65) (layer Edge.Cuts) (width 0.05) (tstamp 617D3018))
   (gr_line (start 181.2 37.35) (end 181.179 36.0664) (layer Edge.Cuts) (width 0.05) (tstamp 617D2FCC))
@@ -25257,7 +25263,7 @@
         (xy 94.144053 108.6334) (xy 95.844293 108.6334) (xy 95.882846 108.637197) (xy 95.921399 108.6334) (xy 95.921407 108.6334)
         (xy 96.036733 108.622041) (xy 96.184706 108.577154) (xy 96.321079 108.504262) (xy 96.44061 108.406164) (xy 96.465193 108.37621)
         (xy 96.671105 108.170298) (xy 96.720794 108.290256) (xy 96.834062 108.459774) (xy 96.978225 108.603937) (xy 97.147743 108.717205)
-        (xy 97.15299 108.719378) (xy 97.152989 110.499678) (xy 97.152989 110.774343) (xy 97.15299 110.774353) (xy 97.152989 112.272078)
+        (xy 97.15299 108.719378) (xy 97.152989 110.225655) (xy 97.152989 110.774343) (xy 97.15299 110.774353) (xy 97.152989 112.272078)
         (xy 97.149313 112.309401) (xy 97.152989 112.346723) (xy 97.152989 112.346733) (xy 97.163986 112.458386) (xy 97.206025 112.596972)
         (xy 97.207443 112.601647) (xy 97.278015 112.733677) (xy 97.311173 112.77408) (xy 97.372988 112.849402) (xy 97.401992 112.873205)
         (xy 99.651103 115.122316) (xy 99.560003 115.096422) (xy 99.559941 115.096411) (xy 99.558938 115.09612) (xy 99.181316 114.989468)
