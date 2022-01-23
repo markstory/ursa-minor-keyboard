@@ -2679,7 +2679,7 @@ F 3 "~" H 7400 1700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L keebio:PRTR5V0U2X U5
+L ursaminor_pcb-rescue:PRTR5V0U2X-keebio U5
 U 1 1 6185F515
 P 6800 2250
 F 0 "U5" H 6800 1985 50  0000 C CNN
@@ -2753,7 +2753,7 @@ Wire Wire Line
 	7200 2200 7200 1850
 Connection ~ 7200 1850
 $Comp
-L keebio:PRTR5V0U2X U6
+L ursaminor_pcb-rescue:PRTR5V0U2X-keebio U6
 U 1 1 620AFCBA
 P 7000 5000
 F 0 "U6" H 7000 4735 50  0000 C CNN
@@ -2809,7 +2809,7 @@ Connection ~ 7400 4600
 Wire Wire Line
 	7400 4600 7450 4600
 $Comp
-L keebio:PRTR5V0U2X U7
+L ursaminor_pcb-rescue:PRTR5V0U2X-keebio U7
 U 1 1 621D90B5
 P 7100 7850
 F 0 "U7" H 7100 7585 50  0000 C CNN
@@ -2876,10 +2876,10 @@ F 3 "" H 7550 8000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0155
 U 1 1 626B327C
 P 6550 5150
-F 0 "#PWR?" H 6550 5000 50  0001 C CNN
+F 0 "#PWR0155" H 6550 5000 50  0001 C CNN
 F 1 "+5V" H 6565 5323 50  0000 C CNN
 F 2 "" H 6550 5150 50  0001 C CNN
 F 3 "" H 6550 5150 50  0001 C CNN
