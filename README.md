@@ -27,26 +27,25 @@ This directory contains the first drafts of the PCB based build. This is still v
   reaching under the palm.
 * **No Frills, or Frills** The base model has a simple stripped down keyboard.
   It has no lights, no encoders, just 58 switches and wires. The bling model
-  includes support for per-key RGB, and case mounting holes for more elaborate
-  enclosures in the future.
+  includes support for per-key RGB.
 
 ### v01/base
 
-This is a basic board design. It has has no frills and a smaller parts list. The intention is that it used caseless with self-adhesive feet, or bare on the switch pins/diodes.
+This is a basic board design. It has has no frills and a smaller parts list. The intention is that it used caseless with self-adhesive feet, or directly on a desk.
 
 
 ### v01/bling
 
-This board builds on `v01/base` and adds per-key RGB lighting via RGB matrix drivers over I2C.
+This design builds on the `v01/base` and adds per-key RGB lighting via RGB matrix drivers over I2C. Like the base board it is intended to be used caseless.
 
 
-### Firmware?
+### Firmware
 
-Firmware for the PCB design is not complete.
+Firmware for these PCB designs can be found in my [QMK fork](https://github.com/markstory/qmk_firmware/tree/ursa-minor-v1).
 
 
 ## FAQ
 
 **Why Ursa Minor?**
 
-The keypad shape and thumb ar remind me of [Ursa Minor](https://en.wikipedia.org/wiki/Ursa_Minor).
+The keypad shape and thumb arc remind me of [Ursa Minor](https://en.wikipedia.org/wiki/Ursa_Minor).
