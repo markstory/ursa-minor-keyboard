@@ -18,19 +18,6 @@ Left side\naddress:\n101 + A1 + A2 + R/W\n1010000rw
 Text Notes 11250 950  0    50   ~ 0
 Right side\naddress:\n101 + A1 + A2 +R/W\n1010001rw
 $Comp
-L Device:R_Small R11
-U 1 1 612F67D0
-P 950 2600
-F 0 "R11" V 754 2600 50  0000 C CNN
-F 1 "100K" V 845 2600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 950 2600 50  0001 C CNN
-F 3 "~" H 950 2600 50  0001 C CNN
-	1    950  2600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	850  2600 750  2600
-$Comp
 L Device:R_Small R12
 U 1 1 612F7594
 P 950 2750
@@ -47,9 +34,6 @@ Wire Wire Line
 	1550 2700 1550 2750
 Wire Wire Line
 	850  2750 750  2750
-Wire Wire Line
-	750  2500 750  2600
-Connection ~ 750  2600
 $Comp
 L Device:R_Small R14
 U 1 1 612FC5F2
@@ -278,8 +262,6 @@ $EndComp
 Wire Wire Line
 	650  2500 750  2500
 Wire Wire Line
-	750  2600 750  2750
-Wire Wire Line
 	1200 3300 1200 3350
 Wire Wire Line
 	1200 3000 1200 3100
@@ -306,19 +288,6 @@ SDA-R
 Text GLabel 12300 2350 0    50   Input ~ 0
 SCL-R
 $Comp
-L Device:R_Small R9
-U 1 1 61AD747A
-P 11750 2550
-F 0 "R9" V 11554 2550 50  0000 C CNN
-F 1 "100K" V 11645 2550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 11750 2550 50  0001 C CNN
-F 3 "~" H 11750 2550 50  0001 C CNN
-	1    11750 2550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	11650 2550 11550 2550
-$Comp
 L Device:R_Small R10
 U 1 1 61AD7481
 P 11750 2700
@@ -333,8 +302,6 @@ Wire Wire Line
 	12500 2650 12250 2650
 Wire Wire Line
 	12250 2650 12250 2700
-Wire Wire Line
-	11650 2700 11550 2700
 $Comp
 L Device:R_Small R13
 U 1 1 61AD748C
@@ -444,8 +411,6 @@ Wire Wire Line
 Connection ~ 13100 1650
 Wire Wire Line
 	13100 1650 13200 1650
-Wire Wire Line
-	11550 2550 11550 2700
 Wire Wire Line
 	11900 3250 11900 3300
 Wire Wire Line
@@ -2211,14 +2176,7 @@ F 3 "~" H 12100 1800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11850 2550 11900 2550
-Wire Wire Line
 	11850 2700 12250 2700
-Wire Wire Line
-	11550 2550 11250 2550
-Wire Wire Line
-	11250 2550 11250 2700
-Connection ~ 11550 2550
 $Comp
 L power:VBUS #PWR0138
 U 1 1 63E6DC9C
@@ -2365,7 +2323,6 @@ $EndComp
 Wire Wire Line
 	12600 5150 12600 5050
 NoConn ~ 12500 2450
-NoConn ~ 11250 2500
 NoConn ~ 1800 2500
 NoConn ~ 1800 2900
 $Comp
@@ -2613,8 +2570,6 @@ Connection ~ 13100 800
 Wire Wire Line
 	13100 800  13800 800 
 Wire Wire Line
-	1050 2600 1200 2600
-Wire Wire Line
 	1050 2750 1550 2750
 $Comp
 L power:+5V #PWR?
@@ -2627,9 +2582,6 @@ F 3 "" H 1200 2400 50  0001 C CNN
 	1    1200 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1200 2400 1200 2600
-Connection ~ 1200 2600
 Wire Wire Line
 	1200 2600 1800 2600
 $Comp
@@ -2644,12 +2596,17 @@ F 3 "" H 11850 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11850 2200 11850 2300
+	11900 2300 11900 2550
+Wire Wire Line
+	11900 2550 12500 2550
+Wire Wire Line
+	1200 2400 1200 2600
+Wire Wire Line
+	750  2500 750  2750
 Wire Wire Line
 	11850 2300 11900 2300
 Wire Wire Line
-	11900 2300 11900 2550
-Connection ~ 11900 2550
+	11850 2200 11850 2300
 Wire Wire Line
-	11900 2550 12500 2550
+	11250 2700 11650 2700
 $EndSCHEMATC
