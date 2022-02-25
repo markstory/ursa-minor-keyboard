@@ -31,17 +31,27 @@ This directory contains the first drafts of the PCB based build. This is still v
 
 ### v01/base
 
+**Printed, Tested**
+
 This is a basic board design. It has has no frills and a smaller parts list. The intention is that it used caseless with self-adhesive feet, or directly on a desk.
 
 
 ### v01/bling
 
-This design builds on the `v01/base` and adds per-key RGB lighting via RGB matrix drivers over I2C. Like the base board it is intended to be used caseless.
+**Printed, Tested**
 
+This design builds on caseless foundatin of the `v01/base` and adds per-key RGB lighting via RGB matrix drivers over I2C. Like the base board it is intended to be used caseless.
+
+
+### v01/bling-case
+
+**Work In Progress**
+
+This board is a distinct design from `v01/bling` & `v01/base`. It is intended to be used with a switch plate and hollow body case.
 
 ### Firmware
 
-Firmware for these PCB designs can be found in my [QMK fork](https://github.com/markstory/qmk_firmware/tree/ursa-minor-v1).
+Firmware for the `v01/base` and `v01/bling` can be found [in my QMK fork][https://github.com/markstory/qmk_firmare/tree/ursa-minor-v1].
 
 
 ## FAQ
