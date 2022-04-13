@@ -14,7 +14,10 @@ You can find a design/build guide on my blog:
 
 ## v01
 
-This directory contains the first drafts of the PCB based build. This is still very much a work in progress and no working boards have been produced.
+This directory contains the first drafts of the PCB based build. I've completed
+design on two variants. Both have been printed and tested. A few defects were
+found in the `v01/bling` board. These defects have been corrected. I've posted
+a [longer article on the design and production](http://mark-story.com/posts/view/designing-my-first-keyboard-pcb).
 
 ### Notable Features
 
